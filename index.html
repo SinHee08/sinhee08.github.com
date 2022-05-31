@@ -3,17 +3,164 @@
 
 <head>
     <title>MyProfile</title>
+
+    <style>
+        body {
+            margin: auto;
+            max-width: 1280px;
+            background-color: #FFFF;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 3vw;
+        }
+
+        .titlebox {
+            height: 20vh;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        img {
+            display: block;
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .imgbox {
+            padding: 0px 40px;
+        }
+
+        .box {
+            margin: auto;
+            max-width: 1280px;
+            width: 70%;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        .boxright {
+            border: 6px solid black;
+            height: auto;
+            text-align: left;
+            font-size: 40px;
+            position: relative;
+            margin: auto;
+            padding: 0px 20px;
+            background-color: antiquewhite;
+
+        }
+
+        .content {
+            width: 33.33%;
+            display: table;
+            text-align: center;
+            clear: none;
+            justify-content: center;
+            padding: 5%;
+            font-size: 25px;
+            font-weight: bolder;
+        }
+
+        .title {
+            padding: 30px;
+            border: 7px black solid;
+            border-top: none;
+            font-weight: bolder;
+            width: 100%;
+            margin: auto;
+            background-color: antiquewhite;
+        }
+
+        .centerline {
+            padding: 40px;
+
+        }
+    </style>
 </head>
 
-<body align="center">
+<body>
+    <div class="titlebox">
+        <p class="title">My Profile</p>
+    </div>
 
-    <img src="images/Myphoto.jpg" width="250">
-    <p>Tan Sin Hee</p>
-    <p>tansinhee0083@e.newera.edu.my</p>
-    <div><a href="https://tansinhee.github.io/week2/">week2</a></div>
-    <div><a href="https://tansinhee.github.io/week3/">week3</a></div>
-    <div><a href="https://tansinhee.github.io/week3/jameswoo.github.io-main/index.html">week3 exercise2</a></div>
-    <div><a href="https://tansinhee.github.io/week3/apple.html">week3 apple.inc</a></div>
+    <div class="container">
+        <div class="box">
+            <div class="imgbox">
+                <img src="images/Myphoto.jpg" />
+            </div>
+
+            <div class="centerline"></div>
+
+            <div class="boxright">
+                <p><strong>Name: </strong> Tan Sin Hee</p>
+                <p><strong>Gmail: </strong> tansinhee0083@e.newera.edu.my</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="content">
+            <div>
+                <b>Week2</b>
+            </div>
+            <ul>
+                <li>
+                    <div><a href="https://tansinhee.github.io/week2/" target="_blank">week2 index1</a></div>
+                </li>
+                <li>
+                    <div><a href="https://tansinhee.github.io/week2/index2.html" target="_blank">week2 index2</a></div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <div>
+                <b>Week3 Class Tutorial</b>
+            </div>
+            <ul>
+                <li>
+                    <div><a href="https://tansinhee.github.io/week3/" target="_blank">week3</a></div>
+                </li>
+                <li>
+                    <div><a href="https://tansinhee.github.io/week3/jameswoo.github.io-main/index.html" target="_blank">week3
+                            exercise2</a></div>
+                </li>
+                <li>
+                    <div><a href="https://tansinhee.github.io/week3/apple.html" target="_blank">week3 apple.inc</a></div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <div>
+                <b>Week3 Homework</b>
+            </div>
+            <ul>
+                <li>
+                    <div><a href="https://tansinhee.github.io/week3/homework/homework1.html" target="_blank">Homework1</a></div>
+                </li>
+                <li>
+                    <div><a href="https://tansinhee.github.io/week3/homework/homework2.html" target="_blank">Homework2</a></div>
+                </li>
+                <li>
+                    <div><a href="https://tansinhee.github.io/week3/homework/homework3.html" target="_blank">Homework3</a></div>
+                </li>
+                <li>
+                    <div><a href="https://tansinhee.github.io/week3/homework/homework4.html" target="_blank">Homework4</a></div>
+                </li>
+                <li>
+                    <div><a href="https://tansinhee.github.io/week3/homework/homework5.html" target="_blank">Homework5</a></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
 
 
 </body>
