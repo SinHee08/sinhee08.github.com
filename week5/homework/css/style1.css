@@ -21,38 +21,76 @@
 }
 
 .menu {
+    display: flex;
     justify-content: center;
+    align-items: center;
     background-color: #c0c0c0;
+    margin-bottom: 10px;
 }
 
-.menu p {
+.menu a {
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-.menu p:hover {
+.menu a:hover {
     text-decoration: underline;
     background-color: #ddd;
     color: #29c5f6;
 }
 
-.slideshow {
-    position: relative;
-    background-image: url(../images/1006619-min.jpg);
-    width: 100%;
-    height: 350px;
-    background-position: center;
-    background-size: cover;
+.slide-container {
+    width: 1000px;
+    height: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    text-align: center;
 }
 
-.title {
-    position: absolute;
-    bottom: 0;
-    right: 10%;
-    font-size: 80px;
-    color: azure;
+.image-container {
+    width: 3000px;
+    height: 550px;
+    position: relative;
+    transition: left 2s;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+}
+
+.slider-image {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    max-width: 1000px;
+    max-height: 550px;
+}
+
+.button-container {
+    top: -20px;
+    position: relative;
+}
+
+.slider-button {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+}
+
+#slider-image-1:target~.image-container {
+    left: 0px;
+}
+
+#slider-image-2:target~.image-container {
+    left: -1000px;
+}
+
+#slider-image-3:target~.image-container {
+    left: -2000px;
 }
 
 .feat {
@@ -67,6 +105,7 @@
     margin: 10px;
     text-align: center;
     border: solid;
+    background-color: #a0b5b5;
 }
 
 .row {
@@ -81,6 +120,7 @@
     margin: 20px;
     padding: 20px;
     border: solid;
+    background-color:azure;
 }
 
 .sidebar {
@@ -89,6 +129,7 @@
     margin: 20px;
     padding: 20px;
     border: solid;
+    background-color: antiquewhite;
 }
 
 .footer{
@@ -105,9 +146,33 @@
 
 /* Mobile */
 @media screen and (max-width: 600px){
-    .slideshow{
-        background-image: url(../images/ultraman-beam\ \(1\).gif);
+    .slide-container {
+        width: 550px;
+        height: 300px;
     }
+
+    .image-container {
+        width: 1650px;
+        height: 300px;
+    }
+
+    .slider-image {
+        max-width: 550px;
+        max-height: 300px;
+    }
+
+    #slider-image-1:target~.image-container {
+        left: 0px;
+    }
+
+    #slider-image-2:target~.image-container {
+        left: -550px;
+    }
+
+    #slider-image-3:target~.image-container {
+        left: -1095px;
+    }
+
     .feat{
         flex-direction:column;
     }

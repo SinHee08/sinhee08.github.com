@@ -34,6 +34,7 @@
 }
 
 .menu h2 {
+    display: block;
     color: black;
     text-align: center;
     padding: 14px 16px;
@@ -60,14 +61,19 @@
     background-color: antiquewhite;
     border: solid;
     margin:10px;
+    padding: 20px;
     text-align: center;
 }
 
 .right{
     width:50%;
+    height: 400px;
+    background-size: cover;
+    background-image: url(../images/ultraman-beam\ \(1\).gif);
     background-color: antiquewhite;
     border: solid;
     margin:10px;
+    padding: 20px;
     text-align: center;
 }
 
@@ -75,8 +81,8 @@
     display: flex;
     margin: 10px;
     justify-content: center;
-    background-color: #f1f1f1;
-    border: 10px;
+    background-color: beige;
+    border: solid;
 }
 
 .botnav {
@@ -141,6 +147,7 @@
 
     .right{
         width: auto;
+        height: 250px;
     }
 }
 
