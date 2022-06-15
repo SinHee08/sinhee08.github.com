@@ -81,7 +81,7 @@
     display: flex;
     margin: 10px;
     justify-content: center;
-    background-color: beige;
+    background-color: antiquewhite;
     border: solid;
 }
 
@@ -92,6 +92,7 @@
     align-items: center;
     width: 25%;
     margin: 5px;
+    background-color: aliceblue;
 }
 
 /* Tablet */
