@@ -1,0 +1,59 @@
+.item1 {
+    grid-area: menu1;
+}
+
+.item2 {
+    grid-area: logo;
+    width:40%;
+    padding:20px;
+}
+
+.item3 {
+    grid-area: phone;
+    margin-left: 30%;
+}
+
+.item4 {
+    grid-area: menu2;
+    margin-left: 10%;
+}
+
+.item5 {
+    grid-area: slide;
+    padding:50px;
+}
+
+.item6 {
+    grid-area: tcontent;
+    padding:80px;
+}
+
+.item7 {
+    grid-area: sbar;
+    padding-top: 90px;
+}
+
+.item8 {
+    grid-area: footer;
+    padding:40px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'menu1 menu1 menu1 menu1'
+        'logo logo phone phone'
+        'logo logo menu2 menu2'
+        'slide slide sbar sbar'
+        'tcontent tcontent sbar sbar'
+        'footer footer footer footer';
+    gap: 10px;
+    background-color: black;
+    padding: 10px;
+}
+
+.grid-container>div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-size: 30px;
+}

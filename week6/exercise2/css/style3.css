@@ -1,0 +1,53 @@
+.item1 {
+    grid-area: logo;
+    padding-top: 20px;
+    width: 40%;
+}
+
+.item2 {
+    grid-area: phone;
+    margin-left: 30%;
+}
+
+.item3 {
+    grid-area: menu1;
+}
+
+.item4 {
+    grid-area: image;
+    padding:50px;
+}
+
+.item5 {
+    grid-area: tcontent;
+    padding: 80px;
+}
+
+.item6 {
+    grid-area: sbar;
+    padding: 80px;
+}
+
+.item7 {
+    grid-area: footer;
+    padding:40px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'logo logo phone phone'
+        'logo logo menu1 menu1'
+        'image image image image'
+        'tcontent tcontent tcontent sbar'
+        'footer footer footer footer';
+    gap: 10px;
+    background-color: black;
+    padding: 10px;
+}
+
+.grid-container>div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-size: 30px;
+}
