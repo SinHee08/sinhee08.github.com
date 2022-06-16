@@ -162,33 +162,6 @@ div#slide figure{
         width: auto;
     }
 
-    .slide-container {
-        width: 533px;
-        height: 300px;
-    }
-
-    .image-container {
-        width: 1650px;
-        height: 300px;
-    }
-
-    .slider-image {
-        max-width: 550px;
-        max-height: 300px;
-    }
-
-    #slider-image-1:target~.image-container {
-        left: 0px;
-    }
-
-    #slider-image-2:target~.image-container {
-        left: -100%;
-    }
-
-    #slider-image-3:target~.image-container {
-        left: -200%;
-    }
-
     .row {
         flex-direction: column;
         height: auto;
