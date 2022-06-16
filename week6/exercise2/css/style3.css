@@ -20,12 +20,12 @@
 
 .item5 {
     grid-area: tcontent;
-    padding: 80px;
+    padding: 100px;
 }
 
 .item6 {
     grid-area: sbar;
-    padding: 80px;
+    padding: 100px;
 }
 
 .item7 {
