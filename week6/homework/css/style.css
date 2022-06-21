@@ -9,7 +9,7 @@
 }
 
 /* index */
-#index{
+#index {
     position: relative;
 }
 
@@ -210,6 +210,12 @@ p {
     margin-top: 5%;
 }
 
+.c11 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+
 .s1 {
     position: relative;
     text-align: center;
@@ -228,12 +234,12 @@ p {
     height: 90px;
 }
 
-.s1 h4{
+.s1 h4 {
     text-align: left;
     margin: 5%;
 }
 
-.s1 p{
+.s1 p {
     font-size: 15px;
     font-weight: lighter;
     text-align: left;
@@ -487,7 +493,7 @@ p {
 
 
 /* social media */
- .social{
+.social {
     position: absolute;
     left: -9%;
     top: 45%;
@@ -495,13 +501,195 @@ p {
     width: 20px;
 }
 
-.social img{
+.social img {
     margin: 10px;
-} 
+}
 
-.socialreg{
+.socialreg {
     width: 5px;
     height: 29px;
     background-color: #6156F9;
     margin-left: 15px;
+}
+
+/* Tablet */
+@media screen and (max-width: 1024px) and (min-width: 600px) {
+
+    /* INDEX */
+    .main {
+        width: 70%;
+    }
+
+    .box {
+        width: 40%;
+    }
+
+    .box img {
+        height: 400px;
+    }
+
+    .button {
+        margin-top: 10%;
+    }
+
+
+    .mousebox {
+        display: none;
+    }
+
+    /* BIOGRAPHY */
+    .box2 img {
+        width: auto;
+        height: 450px;
+        left: 0%;
+    }
+
+    .main2 {
+        padding-top: 0%;
+    }
+
+    /* OUR SERVICES */
+    .s1 {
+        width: 300px;
+        height: 450px;
+    }
+
+    .s1 p {
+        height: 400px;
+    }
+
+    /* PRICING */
+    .p1 {
+        width: 300px;
+        height: 450px;
+    }
+
+    .pbutton1 {
+        bottom: 5%;
+        right: 22%;
+    }
+
+    .pbutton2 {
+        bottom: 5%;
+        right: 22%;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+
+    /* INDEX */
+    .topback {
+        background-size: 70%;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    .box {
+        display: none;
+    }
+
+    .button {
+        margin-top: 10%;
+    }
+
+    .mousebox {
+        display: none;
+    }
+
+    /* BIOGRAPHY */
+    .main2 {
+        width: 100%;
+    }
+
+    .box2 {
+        display: none;
+    }
+
+    /* OUR SERVICES */
+    .c1 {
+        flex-direction: column;
+    }
+
+    .c11 {
+        flex-direction: column;
+        margin-top: 0%;
+    }
+
+    .s1 {
+        width: fit-content;
+        margin-bottom: 20px;
+    }
+
+    /* PRICING */
+
+    .p1 {
+        width: fit-content;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 10%;
+    }
+
+    .pbutton1 {
+        bottom: 5%;
+        right: 30%;
+    }
+
+    .pbutton2 {
+        bottom: 5%;
+        right: 30%;
+    }
+
+    /* FOOTER */
+
+    #footer{
+        padding: 20% 5% 5% 5%;
+    }
+
+    .fc1{
+        width: auto;
+    }
+
+    .flogo {
+        font-size: 25px;
+    }
+    
+    .stay {
+
+        font-size: 15px;
+
+    }
+    
+    .ftitle {
+        font-size: 10px;
+    }
+
+    .fsocial img{
+        width: auto;
+        height: 18.5px;
+    }
+    
+    
+    .fcontent p {
+        font-size: 8px;
+    }
+
+    .fc2{
+        width: auto;
+    }
+
+    .fc3{
+        width: auto;
+    }
+
+    .fc4{
+        width: auto;
+    }
+
+    .fcontent p img {
+        width: auto;
+        height: 15.5px;
+    }
 }
