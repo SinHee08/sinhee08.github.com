@@ -7,13 +7,16 @@
     font-family: 'Poppins', sans-serif;
     color: #42495B;
 }
+.section{
+    max-width: 1024px;
+}
 
 /* index */
 #index {
     position: relative;
 }
 
-.topback {
+#topback {
     width: auto;
     background-image: url(../images/Bg\ Shape@2x.png);
     background-repeat: no-repeat;
