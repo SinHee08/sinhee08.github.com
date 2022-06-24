@@ -7,20 +7,18 @@
     font-family: 'Poppins', sans-serif;
     color: #42495B;
 }
-.section{
-    max-width: 1024px;
-}
 
 /* index */
 #index {
     position: relative;
+    max-width: 1200px;
 }
 
-#topback {
-    width: auto;
+.topback {
     background-image: url(../images/Bg\ Shape@2x.png);
     background-repeat: no-repeat;
     background-position: top right;
+    background-size: 60%;
     max-width: 1280px;
     margin: auto;
 }
@@ -78,6 +76,7 @@
     flex-direction: column;
     width: 50%;
     padding-top: 10%;
+    margin-left: 5%;
 }
 
 .f1 {
@@ -98,7 +97,7 @@ p {
 
 .button {
     border: solid transparent;
-    width: 40%;
+    width: 216px;
     border-radius: 50px;
     font-size: medium;
     background-image: linear-gradient(to right, #1A129F, #483ED9);
@@ -111,24 +110,31 @@ p {
     font-weight: bold;
 }
 
+.button:hover{
+    background-image: linear-gradient(to right, #1A129F, #1A129F);
+    padding: 1px;
+}
+
 .box {
     width: 50%;
 }
 
 .box img {
-    width: auto;
-    height: 700px;
+    width: 100%;
+    height: auto;
 }
 
 .mousebox {
     text-align: center;
     margin-top: -40px;
+    display: flex;
+    justify-content: center;
 }
 
 .mouse {
-    position: absolute;
-    right: 50%;
+    display: flex;
     text-align: center;
+    justify-content: center;
     border: solid transparent;
     box-shadow: 0px 0px 10px 0px#ddd;
     border-radius: 50%;
@@ -150,9 +156,11 @@ p {
 }
 
 .main2 {
+    background-image: url(../images/who\ we\ are\ background@2x.png);
     flex-direction: column;
     width: 50%;
-    padding-top: 5%;
+    padding-right: 10%;
+    padding-left: 5%;
 }
 
 .bio {
@@ -167,13 +175,12 @@ p {
 }
 
 .box2 {
-    position: relative;
     width: 50%;
 }
 
 .box2 img {
-    position: absolute;
-    left: -20%;
+    width: 100%;
+    height: auto;
 }
 
 .button2 {
@@ -194,6 +201,11 @@ p {
     font-weight: bold;
 }
 
+.button2:hover{
+    background-image: linear-gradient(to right, #1A129F, #1A129F);
+    padding: 1px;
+}
+
 
 /* OUR SERVICES */
 .pagebreak2 {
@@ -209,14 +221,9 @@ p {
 
 .c1 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 5%;
-}
-
-.c11 {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 5%;
+    background-image: url(../images/background@2x.png);
 }
 
 .s1 {
@@ -228,6 +235,8 @@ p {
     border-radius: 25px;
     width: 366.84px;
     height: 410.16px;
+    margin-top: 8%;
+    background-color: #ffffff;
 }
 
 .s1 img {
@@ -270,6 +279,11 @@ p {
     font-weight: bold;
 }
 
+.s1button:hover{
+    background-image: linear-gradient(to right, #1A129F, #1A129F);
+    padding: 1px;
+}
+
 
 /* PRICING */
 #pricing {
@@ -288,6 +302,12 @@ p {
     color: #7E76F9;
 }
 
+.p0 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 .p1 {
     position: relative;
     text-align: center;
@@ -298,6 +318,7 @@ p {
     width: 370px;
     height: 463px;
     background-color: #ffffff;
+    margin-top: 5%;
 }
 
 .p1 h3 {
@@ -329,6 +350,10 @@ p {
     font-weight: bold;
 }
 
+.pbutton1:hover{
+    padding: 1px;
+}
+
 .pbutton2 {
     position: absolute;
     bottom: 10%;
@@ -347,6 +372,11 @@ p {
     text-align: center;
     font-size: 16px;
     font-weight: bold;
+}
+
+.pbutton2:hover{
+    background-image: linear-gradient(to right, #1A129F, #1A129F);
+    padding: 1px;
 }
 
 .button-container {
@@ -425,6 +455,11 @@ p {
     font-weight: bold;
 }
 
+.spbutton:hover{
+    background-image: linear-gradient(to right, #1A129F, #1A129F);
+    padding: 1px;
+}
+
 
 /* Footer */
 #footer {
@@ -443,6 +478,7 @@ p {
 .fc1 {
     width: 210px;
     justify-content: center;
+    margin: 10px;
 }
 
 .flogo {
@@ -463,11 +499,18 @@ p {
 .fsocial {
     display: flex;
     justify-content: space-around;
+    margin-top: 10%;
+}
+
+.fsocial img {
+    width: auto;
+    height: 18.4px;
 }
 
 .fc2 {
     color: #ffffff;
     width: 111px;
+    margin: 10px;
 }
 
 .ftitle {
@@ -487,25 +530,31 @@ p {
 .fc3 {
     color: #ffffff;
     width: 197px;
+    margin: 10px;
 }
 
 .fc4 {
     color: #ffffff;
     width: 200px;
+    margin: 10px;
 }
 
 
 /* social media */
 .social {
+    position: -webkit-sticky;
     position: absolute;
-    left: -9%;
-    top: 45%;
+    border: solid transparent;
+    background-color: #ffffff;
     flex-direction: column;
-    width: 20px;
+    width: 15px;
+    bottom: 10%;
 }
 
 .social img {
     margin: 10px;
+    width: 100%;
+    height: auto;
 }
 
 .socialreg {
@@ -519,16 +568,13 @@ p {
 @media screen and (max-width: 1024px) and (min-width: 600px) {
 
     /* INDEX */
-    .main {
-        width: 70%;
+    .f1 {
+        font-size: 30px;
     }
 
-    .box {
-        width: 40%;
-    }
+    .f2 {
+        font-size: 50px;
 
-    .box img {
-        height: 400px;
     }
 
     .button {
@@ -536,46 +582,22 @@ p {
     }
 
 
-    .mousebox {
-        display: none;
-    }
-
     /* BIOGRAPHY */
-    .box2 img {
-        width: auto;
-        height: 450px;
-        left: 0%;
-    }
-
     .main2 {
-        padding-top: 0%;
+        padding-right: 0%;
     }
 
-    /* OUR SERVICES */
-    .s1 {
-        width: 300px;
-        height: 450px;
+    .bio {
+        font-size: 15px;
+        color: #7E76F9;
     }
 
-    .s1 p {
-        height: 400px;
+    .f1b {
+        font-size: 40px;
+        margin: 0%;
+        font-weight: bold;
     }
 
-    /* PRICING */
-    .p1 {
-        width: 300px;
-        height: 450px;
-    }
-
-    .pbutton1 {
-        bottom: 5%;
-        right: 22%;
-    }
-
-    .pbutton2 {
-        bottom: 5%;
-        right: 22%;
-    }
 }
 
 /* Mobile */
@@ -583,11 +605,33 @@ p {
 
     /* INDEX */
     .topback {
-        background-size: 70%;
+        background-size: 0%;
+    }
+
+    .header {
+        display: block;
+    }
+
+    .headright {
+        float: none;
+    }
+
+    .menu {
+        margin-top: 5%;
+        background-color: #6156F9;
     }
 
     .main {
         width: 100%;
+        text-align: center;
+        margin-left: 0%;
+    }
+
+    .button {
+        margin-top: 0%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
     }
 
     .box {
@@ -596,6 +640,7 @@ p {
 
     .button {
         margin-top: 10%;
+        margin-left: 30%;
     }
 
     .mousebox {
@@ -605,6 +650,19 @@ p {
     /* BIOGRAPHY */
     .main2 {
         width: 100%;
+        padding-left: 0%;
+    }
+
+    .content1 {
+        text-align: center;
+    }
+
+    .button2 {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-left: 35%;
+        ;
     }
 
     .box2 {
@@ -612,82 +670,53 @@ p {
     }
 
     /* OUR SERVICES */
-    .c1 {
-        flex-direction: column;
-    }
-
-    .c11 {
-        flex-direction: column;
-        margin-top: 0%;
-    }
-
-    .s1 {
-        width: fit-content;
-        margin-bottom: 20px;
-    }
-
-    /* PRICING */
-
-    .p1 {
-        width: fit-content;
-        margin-left: 10%;
-        margin-right: 10%;
-        margin-top: 10%;
-    }
-
-    .pbutton1 {
-        bottom: 5%;
-        right: 30%;
-    }
-
-    .pbutton2 {
-        bottom: 5%;
-        right: 30%;
+    .t1 {
+        text-align: center;
     }
 
     /* FOOTER */
 
-    #footer{
+    #footer {
         padding: 20% 5% 5% 5%;
     }
 
-    .fc1{
+    .fc1 {
         width: auto;
     }
 
     .flogo {
         font-size: 25px;
     }
-    
+
     .stay {
 
         font-size: 15px;
 
     }
-    
+
     .ftitle {
         font-size: 10px;
     }
 
-    .fsocial img{
+    .fsocial img {
         width: auto;
         height: 18.5px;
     }
-    
-    
+
+
     .fcontent p {
         font-size: 8px;
     }
 
-    .fc2{
+    .fc2 {
         width: auto;
     }
 
-    .fc3{
+    .fc3 {
         width: auto;
     }
 
-    .fc4{
+    .fc4 {
         width: auto;
     }
 
