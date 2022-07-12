@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap" rel="stylesheet">
-    <script src="Js/nav.js"></script>
+    <script src="https://kit.fontawesome.com/294230d258.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -22,29 +22,32 @@
                 <div class="logo">
                     <img src="images/logo.png">
                 </div>
-                <div id="myNav" class="overlay">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <div class="overlay-content">
-                        <a href="aboutpage.html">About</a>
-                        <a href="#">Biography</a>
-                        <a href="#">Synopsis</a>
-                        <a href="#">CONTACT</a>
-                    </div>
-                </div>
                 <div class="menu">
-                    <a href="#">About</a>
+                    <a href="aboutpage.html">About</a>
                     <a href="#">Biography</a>
                     <a href="#">Synopsis</a>
                 </div>
                 <div class="contact">
                     <a href="#">CONTACT</a>
                 </div>
+                <!-- Mobile Menu -->
+                <div class="navicon">
+                    <div id="myNav" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="overlay-content">
+                            <a href="aboutpage.html">About</a>
+                            <a href="#">Biography</a>
+                            <a href="#">Synopsis</a>
+                            <a href="#">Contact</a>
+                        </div>
+                    </div>
+                    <span class="navstyle" onclick="openNav()">&#9776;</span>
+                </div>
             </div>
             <div class="content1">
                 <div class="main">
                     <p class="i1">After so many years</p>
-                    <p class="i2">Do you still</p>
-                    <p class="i2">believe in Light?</p>
+                    <p class="i2">Do you still believe in Light?</p>
                     <p class="i3">Let's go back to the past together,</p>
                     <p class="i3">Let's experience the initial touch that Ultraman gave us!</p>
                 </div>
@@ -57,14 +60,14 @@
         <!-- About -->
         <section id="about">
             <div class="symbol">
-                <div><img src="images/tiga logo.png"></div>
-                <div><img src="images/dyna logo.png"></div>
-                <div><img src="images/gaia logo.png"></div>
+                <div class="boy"><img src="images/tiga logo.png"></div>
+                <div class="boy"><img src="images/dyna logo.png"></div>
+                <div class="boy"><img src="images/gaia logo.png"></div>
             </div>
             <hr class="new1">
             <div class="content2">
                 <div class="box2">
-                        <img src="images/ultraman author 1.png">
+                    <img src="images/ultraman author 1.png">
                 </div>
                 <div class="main2">
                     <p class="a1">About</p>
@@ -81,7 +84,7 @@
 
         <!-- Biography -->
         <section id="biography" class="pagebreak">
-            <div>
+            <div class="btitle">
                 <p class="bio">Biography</p>
                 <p class="t1">Hensei Three Hero</p>
             </div>
@@ -123,63 +126,63 @@
                 <p class="t2">Most Impress Episodes</p>
             </div>
             <div class="content4">
-                    <p class="syn">Ultraman Tiga</p>
-                    <div class="s1">
-                        <div class="s1pic">
-                            <img src="images/tiga ep1.png">
-                        </div>
-                        <div class="s1c">
-                            <p class="ctitle">Episodes 1 : The One Who Inherits the Light</p>
-                            <p class="cparagraph">The appearance of two monsters, Gorzan and Melba, broke the peace of
-                                earth. The monsters have landed in Japan, and they are aiming for a certain place. There
-                                are
-                                relics of super ancient civilizations that no one knows about! The victorious team
-                                members
-                                found the legendary giant Tiga here!</p>
-                        </div>
+                <p class="syn">Ultraman Tiga</p>
+                <div class="s1">
+                    <div class="s1pic">
+                        <img src="images/tiga ep1.png">
+                    </div>
+                    <div class="s1c">
+                        <p class="ctitle">Episodes 1 : The One Who Inherits the Light</p>
+                        <p class="cparagraph">The appearance of two monsters, Gorzan and Melba, broke the peace of
+                            earth. The monsters have landed in Japan, and they are aiming for a certain place. There
+                            are
+                            relics of super ancient civilizations that no one knows about! The victorious team
+                            members
+                            found the legendary giant Tiga here!</p>
                     </div>
                 </div>
+            </div>
 
-                <div class="content4">
-                    <p class="syn">Ultraman Dyna</p>
-                    <div class="s1">
-                        <div class="s1pic">
-                            <img src="images/dayna ep31.png">
-                        </div>
-                        <div class="s1c">
-                            <p class="ctitle">Episodes 31 : Deathmatch! Dyna vs. Dyna</p>
-                            <p class="cparagraph">Gregory is a polymorphic alien warrior who travels the universe in
-                                search
-                                of opponents to challenge and prove his prowess. Upon arriving on Earth, Gregory
-                                challenges
-                                Ultraman Dana to cement his reputation to see who is the better fighter, but loses the
-                                ensuing duel. After accepting his loss with dignity, Gregory returned to space to
-                                continue
-                                his journey.</p>
-                        </div>
+            <div class="content4">
+                <p class="syn">Ultraman Dyna</p>
+                <div class="s1">
+                    <div class="s1pic">
+                        <img src="images/dayna ep31.png">
+                    </div>
+                    <div class="s1c">
+                        <p class="ctitle">Episodes 31 : Deathmatch! Dyna vs. Dyna</p>
+                        <p class="cparagraph">Gregory is a polymorphic alien warrior who travels the universe in
+                            search
+                            of opponents to challenge and prove his prowess. Upon arriving on Earth, Gregory
+                            challenges
+                            Ultraman Dana to cement his reputation to see who is the better fighter, but loses the
+                            ensuing duel. After accepting his loss with dignity, Gregory returned to space to
+                            continue
+                            his journey.</p>
                     </div>
                 </div>
+            </div>
 
-                <div class="content4">
-                    <p class="syn">Ultraman Gaia</p>
-                    <div class="s1">
-                        <div class="s1pic">
-                            <img src="images/gaia ep18.png">
-                        </div>
-                        <div class="s1c">
-                            <p class="ctitle">Episodes 18 : Agul Vs Gaia</p>
-                            <p class="cparagraph">Fujimiya Hiro also transformed into Ultraman Aguru, and used his own
-                                abilities to revive the Zhongnel monster sleeping in the ground. A giant creature,
-                                Digrob,
-                                fell from the sky and attacked Tokyo. Gaia Ultraman is facing an unprecedented crisis.
-                                At
-                                the same time, Ultraman Aguru destroyed the Zhongner monster. Is he an enemy or a
-                                friend?
-                                How will Ultraman Gaia resist the monster attack?</p>
-                        </div>
+            <div class="content4">
+                <p class="syn">Ultraman Gaia</p>
+                <div class="s1">
+                    <div class="s1pic">
+                        <img src="images/gaia ep18.png">
+                    </div>
+                    <div class="s1c">
+                        <p class="ctitle">Episodes 18 : Agul Vs Gaia</p>
+                        <p class="cparagraph">Fujimiya Hiro also transformed into Ultraman Aguru, and used his own
+                            abilities to revive the Zhongnel monster sleeping in the ground. A giant creature,
+                            Digrob,
+                            fell from the sky and attacked Tokyo. Gaia Ultraman is facing an unprecedented crisis.
+                            At
+                            the same time, Ultraman Aguru destroyed the Zhongner monster. Is he an enemy or a
+                            friend?
+                            How will Ultraman Gaia resist the monster attack?</p>
                     </div>
                 </div>
-            
+            </div>
+
             <div class="button3 ">
                 <a href="#">EXPLORE MORE</a>
             </div>
@@ -212,8 +215,10 @@
                         <br>
                         <input type="text" class="info" name="messages" placeholder="Messages" required>
                     </div>
-                    <br>
-                    <input type="submit" class="cusub" value="SUMBITNOW">
+                    <div class="cubox">
+                        <input type="submit" class="cusub" value="SUMBITNOW">
+                    </div>
+                    
                 </form>
             </div>
         </section>
@@ -255,5 +260,15 @@
     </div>
 
 </body>
+
+<script>
+    function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
+</script>
 
 </html>

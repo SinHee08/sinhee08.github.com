@@ -30,6 +30,19 @@
             <div class="contact">
                 <a href="#">CONTACT</a>
             </div>
+            <!-- Mobile Menu -->
+            <div class="navicon">
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                        <a href="aboutpage.html">About</a>
+                        <a href="#">Biography</a>
+                        <a href="#">Synopsis</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+                <span class="navstyle" onclick="openNav()">&#9776;</span>
+            </div>
         </div>
         <div class="content">
             <p>About the Author</p>
@@ -78,7 +91,7 @@
 
         <div class="contentbreak">
             <div class="centercontent">
-                <p class="ctitle">Early Life</p>
+                <p class="ctitle1">Early Life</p>
             </div>
             <div class="centercontent">
                 <img src="images/丸山浩 早期.png">
@@ -172,5 +185,15 @@
         </div>
     </footer>
 </div>
+
+<script>
+    function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
+</script>
 
 </html>
