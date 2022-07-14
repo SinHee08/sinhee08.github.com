@@ -1,0 +1,236 @@
+.container {
+    position: relative;
+    background-color: transparent;
+    max-width: 1280px;
+    margin: auto;
+    font-family: 'Epilogue', sans-serif;
+}
+
+/* header */
+.head {
+    background-color: #191A2B;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1240px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 118px;
+    height: 65px;
+    margin: 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu a {
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 30px
+}
+
+.menu a:hover {
+    text-decoration: none;
+    background-color: #ddd;
+    color: #29c5f6;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact a {
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border: rgba(255, 255, 255, 0.5) solid 1px;
+    border-radius: 5px;
+}
+
+.contact a:hover {
+    text-decoration: none;
+    background-color: #ddd;
+    color: #29c5f6;
+}
+
+/* Mobile Menu */
+.navicon {
+    display: none;
+}
+
+.navstyle {
+    font-size: 15px;
+    cursor: pointer;
+    float: right;
+    color: whitesmoke;
+    border: rgba(255, 255, 255, 0.5) solid 1px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-right: 10px;
+    padding: 10px 15px 10px 15px;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+/* end of mobile menu */
+
+.content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.content p {
+    color: #ffffff;
+    font-size: 72px;
+    font-weight: bold;
+    margin: 3% 0;
+}
+
+/* Content */
+#synopsis {
+    max-width: 1280px;
+    background-color: #ECECF4;
+    padding-bottom: 5%;
+}
+
+.mySlides {
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.mySlides img {
+    vertical-align: middle;
+}
+
+.myPhoto {
+    width: 100%;
+    display: none;
+}
+
+.slidesbutton {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    color: black;
+}
+
+.displayleft {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+}
+
+.displayright {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%, -50%);
+}
+
+.contentbreak {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.ctitle {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.content1 {
+    border-bottom: 1px solid linear-gradient(to bottom right, rgba(10.5, 31.5, 31.5, 1), rgba(10.5, 31.5, 31.5, 0.84));
+    background-position: right -200px top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../images/sysnopsis\ backtiga.jpg);
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.insidebg {
+    background-image: linear-gradient(to right, rgba(10.5, 31.5, 31.5, 1) 150px px, rgba(10.5, 31.5, 31.5, 0.84) 100%);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.singelcolum{
+    padding: 30px 40px;
+    max-width: 1160px;
+    width: 100%;
+    z-index: 0;
+    box-sizing: border-box;
+}
