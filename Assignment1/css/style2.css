@@ -23,9 +23,21 @@
 }
 
 .logo img {
-    width: 118px;
     height: 65px;
     margin: 20px;
+    margin-right: 10px;
+}
+
+.logo a{
+    color: #fff ;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo a:hover{
+    text-decoration: none;
+    opacity: 0.8;
 }
 
 .menu {
@@ -154,10 +166,8 @@
 }
 
 .mySlides {
-    max-width: 1200px;
     position: relative;
     margin: auto;
-    padding-top: 10px;
 }
 
 .mySlides img {
@@ -176,12 +186,12 @@
     vertical-align: middle;
     overflow: hidden;
     text-decoration: none;
-    color: inherit;
-    background-color: inherit;
     text-align: center;
     cursor: pointer;
     white-space: nowrap;
-    color: black;
+    color: white;
+    background-color: transparent;
+    font-size: 40px;
 }
 
 .displayleft {
@@ -198,6 +208,7 @@
     transform: translate(0%, -50%);
 }
 
+/* Tvseriesintro */
 .contentbreak {
     max-width: 1200px;
     margin: auto;
@@ -210,7 +221,6 @@
 }
 
 .content1 {
-    border-bottom: 1px solid linear-gradient(to bottom right, rgba(10.5, 31.5, 31.5, 1), rgba(10.5, 31.5, 31.5, 0.84));
     background-position: right -200px top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -221,10 +231,10 @@
 }
 
 .insidebg {
-    background-image: linear-gradient(to right, rgba(10.5, 31.5, 31.5, 1) 150px px, rgba(10.5, 31.5, 31.5, 0.84) 100%);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    background-image: linear-gradient(to right, #0B2020,rgba(11,32,32,0.8));
 }
 
 .singelcolum{
@@ -233,4 +243,199 @@
     width: 100%;
     z-index: 0;
     box-sizing: border-box;
+}
+
+.c1{
+    display: flex;
+    flex-wrap: nowrap;
+    color: #ffffff;
+}
+
+.poster{
+    flex: 1;
+}
+
+.poster img{
+    width: 100%;
+}
+
+.c1intro {
+    flex: 2;
+    margin-left: 10px;
+}
+
+.titleflex{
+    display: flex;
+}
+
+.c1title {
+    font-size: 35.2px;
+    font-weight: bold;
+    margin-top: 1%;
+    margin-left: 20px;
+}
+
+.year{
+    font-size: 35.2px;
+    font-weight: bold;
+    margin-top: 1%;
+    opacity: 0.8;
+}
+
+.c1subtitle{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px
+}
+
+.c1text{
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-left: 20px;
+    text-align: justify;
+}
+
+.content2 {
+    background-position: right -200px top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../images/sysnopsis\ backdyna.jpg);
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    margin-top: 8%;
+}
+
+.content3 {
+    background-position: right -200px top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../images/sysnopsis\ backgaia.jpg);
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    margin-top: 8%;
+}
+
+/* MostImpressEpisodes */
+.contentbreak2 {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 7%;
+}
+
+.ctitle2 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.syn {
+    color: #000000;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.content4 {
+    margin-bottom: 10%;
+}
+
+.s1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.s1pic {
+    flex: 1;
+}
+
+.s1pic img {
+    width: 100%;
+}
+
+.s1c {
+    flex: 2;
+    background-color: white;
+}
+
+.csubtitle2 {
+    color: #000000;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.cparagraph {
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 0 20px;
+    text-align: justify;
+}
+
+/* Footer */
+footer {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #191A2B;
+}
+
+.flogo {
+    display: flex;
+}
+
+.flogo img {
+    height: 65px;
+    margin: 20px;
+    margin-right: 10px;
+}
+
+.fcontent {
+    flex-direction: column;
+}
+
+.fcontent a {
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.fcontent a:hover {
+    opacity: 0.8;
+}
+
+.ftitle {
+    color: #EF6D58;
+    font-size: 16px;
+}
+
+.fc {
+    color: #ffffff;
+}
+
+.social-icons .social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    background-color: #EF6D58;
+    color: #fff;
+    border-radius: 100%;
+    margin-top: 1px;
+    margin-right: 0.5rem;
+}
+
+.social-icons .social-icon a {
+    color: #bd5d38;
+    text-decoration: underline;
+}
+
+.social-icons .social-icon a:hover {
+    opacity: 0.8;
 }

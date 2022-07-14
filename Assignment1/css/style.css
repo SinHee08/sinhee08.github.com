@@ -28,9 +28,21 @@ body{
 }
 
 .logo img {
-    width: 118px;
     height: 65px;
     margin: 20px;
+    margin-right: 10px;
+}
+
+.logo a{
+    color: #fff ;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo a:hover{
+    text-decoration: none;
+    opacity: 0.8;
 }
 
 .menu {
@@ -297,6 +309,7 @@ hr.new1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin: 0 50px;
 }
 
 .c1 {
@@ -306,8 +319,8 @@ hr.new1 {
     border: solid transparent;
     box-shadow: 0px 0px 10px 0px #ddd;
     border-radius: 5%;
-    width: 387px;
-    height: 600px;
+    width: 356px;
+    height: 660px;
     background-color: #ffffff;
     margin-top: 5%;
 }
@@ -315,12 +328,15 @@ hr.new1 {
 .c1 img {
     margin: 20px;
     text-align: center;
-    width: 266px;
-    height: 372px;
+    width: 315px;
 }
 
 .c1 h2 {
     margin: 5px;
+}
+
+.c1 p{
+    padding: 0 10px;
 }
 
 .button2 {
@@ -401,11 +417,13 @@ hr.new1 {
     font-size: 25px;
     font-weight: bold;
     margin-top: 1%;
+    margin-left: 20px;
 }
 
 .cparagraph {
     color: #ffffff;
     font-size: 16px;
+    margin: 0 20px;
 }
 
 .button3 {
@@ -580,9 +598,9 @@ footer {
 }
 
 .flogo img {
-    width: 118px;
     height: 65px;
     margin: 20px;
+    margin-right: 10px;
 }
 
 .fcontent {

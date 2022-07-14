@@ -23,9 +23,21 @@
 }
 
 .logo img {
-    width: 118px;
     height: 65px;
     margin: 20px;
+    margin-right: 10px;
+}
+
+.logo a{
+    color: #fff ;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo a:hover{
+    text-decoration: none;
+    opacity: 0.8;
 }
 
 .menu {
@@ -254,8 +266,8 @@
     border: solid transparent;
     box-shadow: 0px 0px 10px 0px #ddd;
     border-radius: 5%;
-    width: 387px;
-    height: 550px;
+    width: 356px;
+    height: 570px;
     background-color: #ffffff;
     margin-top: 5%;
 }
@@ -263,8 +275,7 @@
 .c4 img {
     margin: 20px;
     text-align: center;
-    width: 266px;
-    height: 372px;
+    width: 315px;
 }
 
 .c4 h2 {
@@ -285,9 +296,9 @@ footer {
 }
 
 .flogo img {
-    width: 118px;
     height: 65px;
     margin: 20px;
+    margin-right: 10px;
 }
 
 .fcontent {
