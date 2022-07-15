@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ContactUs Page</title>
+    <link rel="stylesheet" href="css/style4.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/294230d258.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <section class="head">
+            <div class="header">
+                <div class="logo">
+                    <img src="images/Ultraman Logo.png">
+                    <a href="homepage.html">Ultraman</a>
+                </div>
+                <div class="menu">
+                    <a href="homepage.html">Home</a>
+                    <a href="aboutpage.html">About</a>
+                    <a href="biography.html">Biography</a>
+                    <a href="synopsispage.html">Synopsis</a>
+                </div>
+                <div class="contact">
+                    <a href="contactus.html">CONTACT</a>
+                </div>
+                <!-- Mobile Menu -->
+                <div class="navicon">
+                    <div id="myNav" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="overlay-content">
+                            <a href="homepage.html">Home</a>
+                            <a href="aboutpage.html">About</a>
+                            <a href="biography.html">Biography</a>
+                            <a href="synopsispage.html">Synopsis</a>
+                            <a href="contactus.html">Contact</a>
+                        </div>
+                    </div>
+                    <span class="navstyle" onclick="openNav()">&#9776;</span>
+                </div>
+            </div>
+            <div class="content">
+                <p>Contact Us</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="content5">
+                <div class="contactlogo">
+                    <img src="images/contact.jpg">
+                </div>
+                <form name="contactus" action="form_submit.html" method="get">
+                    <p class="contacttitle">Contact with us</p>
+                    <div class="centerbox">
+                        <input type="email" class="email" name="email" placeholder="Your email" required>
+                        <br>
+                        <input type="text" class="info" name="subject" placeholder="Subject" required>
+                        <br>
+                        <input type="text" class="info" name="messages" placeholder="Messages" required>
+                    </div>
+                    <div class="cubox">
+                        <input type="submit" class="cusub" value="SUMBITNOW">
+                    </div>
+                </form>
+            </div>
+
+            <div class="contactbox">
+                <div class="phone">
+                    <div class="phonetitle">
+                        <img src="images/phonelogo.png">
+                        <p>PHONE</p>
+                    </div>
+                    <a href="tel:019-3464439">019-3464439</a>
+                </div>
+
+                <div class="email">
+                    <div class="emailtitle">
+                        <img src="images/emaillogo.png">
+                        <p>EMAIL</p>
+                    </div>
+                    <a href="mailto:tansinhee0083@e.newera.edu.my">tansinhee0083@e.newera.edu.my</a>
+                </div>
+
+                <div class="phone">
+                    <div class="phonetitle">
+                        <img src="images/addresslogo.png">
+                        <p>ADDRESS</p>
+                    </div>
+                    <a href="https://goo.gl/maps/fsmi6dG9eb7DKdfa7" target="_blank">New Era University College</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="flogo">
+                <img src="images/Ultraman Logo.png">
+            </div>
+
+            <div>
+                <p class="ftitle">MENU</p>
+                <div class="fcontent">
+                    <p><a href="homepage.html">Home</a></p>
+                    <p><a href="aboutpage.html">About</a></p>
+                    <p><a href="biography.html">Biography</a></p>
+                    <p><a href="synopsispage.html">Synopsis</a></p>
+                    <p><a href="contactus.html">Contact</a></p>
+                </div>
+            </div>
+
+            <div class="fcontent">
+                <p class="ftitle">Contact</p>
+                <div class="fc">
+                    <p><img src="images/phone.png"><a herf="tel:019-3464439">019-3464439</a></p>
+                    <p><img src="images/envelope.png"> <a href="mailto:tansinhee0083@e.newera.edu.my">tansinhee0083@<br>e.newera.edu.my</a></p>
+                    <p><img src="images/location.png"> <a href="https://goo.gl/maps/fsmi6dG9eb7DKdfa7" target="_blank">New Era University<br>College</a></p>
+                </div>
+            </div>
+
+            <div class="social-icons">
+                <a class="social-icon" href="https://www.facebook.com/tan.sinhee/" target="_blank"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a class="social-icon" href="https://twitter.com/i/flow/login" target="_blank"><i
+                        class="fab fa-twitter"></i></a>
+                <a class="social-icon" href="https://www.instagram.com/tan.sinhee/?hl=en" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+            </div>
+        </footer>
+    </div>
+</body>
+<script>
+    function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
+</script>
+
+</html>

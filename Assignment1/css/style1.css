@@ -417,8 +417,8 @@ footer {
     }
 
     .c4 {
-        width: 340px;
-        height: 520px;
+        width: auto;
+        height: auto;
     }
 
     /* footer */
@@ -428,7 +428,4 @@ footer {
         text-align: center;
         align-items: center;
     }
-
-
-
 }

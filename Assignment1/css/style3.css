@@ -28,14 +28,14 @@
     margin-right: 10px;
 }
 
-.logo a {
-    color: #fff;
+.logo a{
+    color: #fff ;
     font-size: 25px;
     font-weight: bold;
     text-decoration: none;
 }
 
-.logo a:hover {
+.logo a:hover{
     text-decoration: none;
     opacity: 0.8;
 }
@@ -159,217 +159,83 @@
 }
 
 /* Content */
-#synopsis {
+#biography {
     max-width: 1280px;
     background-color: #ECECF4;
     padding-bottom: 5%;
 }
 
-.mySlides {
-    position: relative;
-    margin: auto;
-}
-
-.mySlides img {
-    vertical-align: middle;
-}
-
-.myPhoto {
-    width: 100%;
-    display: none;
-}
-
-.slidesbutton {
-    border: none;
-    display: inline-block;
-    padding: 8px 16px;
-    vertical-align: middle;
-    overflow: hidden;
-    text-decoration: none;
-    text-align: center;
-    cursor: pointer;
-    white-space: nowrap;
-    color: white;
-    background-color: transparent;
-    font-size: 40px;
-}
-
-.displayleft {
-    position: absolute;
-    top: 50%;
-    left: 0%;
-    transform: translate(0%, -50%);
-}
-
-.displayright {
-    position: absolute;
-    top: 50%;
-    right: 0%;
-    transform: translate(0%, -50%);
-}
-
-/* Tvseriesintro */
-.contentbreak {
+hr.new1 {
+    border-top: 1px solid red;
     max-width: 1200px;
-    margin: auto;
 }
 
-.ctitle {
-    font-size: 50px;
-    font-weight: bold;
-    margin-bottom: 0;
-}
-
-.content1 {
-    background-position: right -200px top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(../images/sysnopsis\ backtiga.jpg);
-    width: 100%;
-    z-index: 1;
-}
-
-.insidebg {
+.hero{
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    background-image: linear-gradient(to right, #0B2020, rgba(11, 32, 32, 0.8));
+    justify-content: space-around;
 }
 
-.singelcolum {
-    padding: 30px 40px;
-    max-width: 1160px;
-    width: 100%;
-    z-index: 0;
-    box-sizing: border-box;
+.herosummary{
+    width: 300px;
+    padding-top: 100px;
 }
 
-.c1 {
-    display: flex;
-    flex-wrap: nowrap;
-    color: #ffffff;
-}
-
-.poster {
-    flex: 1;
-}
-
-.poster img {
+.herosummary img{
     width: 100%;
 }
 
-.c1intro {
-    flex: 2;
-    margin-left: 10px;
-}
-
-.titleflex {
-    display: flex;
-}
-
-.c1title {
-    font-size: 35.2px;
-    font-weight: bold;
-    margin-top: 1%;
-    margin-left: 20px;
-}
-
-.year {
-    font-size: 35.2px;
-    font-weight: bold;
-    margin-top: 1%;
-    opacity: 0.8;
-}
-
-.c1subtitle {
-    font-size: 20px;
-    font-weight: bold;
-    margin-left: 20px
-}
-
-.c1text {
+.herosummary p{
     font-size: 16px;
     font-weight: bold;
     line-height: 1.5;
-    margin-left: 20px;
     text-align: justify;
 }
 
-.content2 {
-    background-position: right -200px top;
-    background-size: cover;
+.heropreview{
+    position: relative;
+    display: flex;
+    width: 450px;
+    height: 748px;
+    margin-bottom: 69px;
+    padding-bottom: 0;
+    justify-content: center;
+    align-items: flex-end;
+    grid-auto-columns: 1fr;
+    grid-template-rows: auto auto;
+    background-image: url(../images/heropreviewback.png);
+    background-position: 50% 100%;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-image: url(../images/sysnopsis\ backdyna.jpg);
-    width: 100%;
-    z-index: 1;
-    margin-top: 8%;
 }
 
-.content3 {
-    background-position: right -200px top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(../images/sysnopsis\ backgaia.jpg);
-    width: 100%;
-    z-index: 1;
-    margin-top: 8%;
-}
-
-/* MostImpressEpisodes */
-.contentbreak2 {
-    max-width: 1200px;
+.heropreview img{
+    width: 443px;
     margin: auto;
-    margin-top: 7%;
 }
 
-.ctitle2 {
-    font-size: 50px;
+.heroprofile{
+    width: 300px;
+    padding-top: 100px;
+    padding-left: 20px;
+}
+
+.profiletitle{
+    font-size: 35.2px;
     font-weight: bold;
+    margin-top: 0;
 }
 
-.syn {
-    color: #000000;
-    font-size: 25px;
+.profilesubtitle{
+    font-size: 14px;
+    opacity: 0.8;
+    margin-bottom: 0%;
+}
+
+.profileparagraph{
+    font-size: 18px;
     font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.content4 {
-    margin-bottom: 10%;
-}
-
-.s1 {
-    display: flex;
-    justify-content: space-between;
-}
-
-.s1pic {
-    flex: 1;
-}
-
-.s1pic img {
-    width: 100%;
-}
-
-.s1c {
-    flex: 2;
-    background-color: white;
-}
-
-.csubtitle2 {
-    color: #000000;
-    font-size: 25px;
-    font-weight: bold;
-    margin-left: 20px;
-}
-
-.cparagraph {
-    color: #000000;
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 1.5;
-    margin: 0 20px;
-    text-align: justify;
+    margin-top: 0;
 }
 
 /* Footer */
@@ -439,6 +305,7 @@ footer {
 
 /* Tablet */
 @media screen and (max-width: 1024px) and (min-width: 600px) {
+    /* index */
     .menu {
         display: none;
     }
@@ -451,32 +318,20 @@ footer {
         display: block;
     }
 
-    .c1title {
-        font-size: 30px;
+    .hero{
+        flex-wrap: wrap;
     }
 
-    .year {
-        font-size: 30px;
+    .herosummary{
+        order: 1;
     }
 
-    .c1subtitle {
-        font-size: 16px;
+    .heropreview{
+        order: 3;
     }
 
-    .c1text {
-        font-size: 14px;
-    }
-
-    .none {
-        display: none;
-    }
-
-    .csubtitle2 {
-        font-size: 20px;
-    }
-
-    .cparagraph {
-        font-size: 14px;
+    .heroprofile{
+        order: 2;
     }
 
     footer {
@@ -498,60 +353,32 @@ footer {
         display: block;
     }
 
-    .mySlides {
-        display: none;
+    .hero{
+        flex-wrap: wrap;
     }
 
-    .contentbreak {
-        padding-top: 1px;
+    .herosummary{
+        order: 1;
     }
 
-    .ctitle {
-        text-align: center;
-        font-size: 40px;
+    .heropreview{
+        width: 300px;
+        height: auto;
+        order: 3;
     }
 
-    .c1 {
-        flex-direction: column-reverse;
+    .heropreview img{
+        width: 290px;
+        margin-bottom:13%;
+        margin-top: 13%;
     }
 
-    .c1title {
-        margin: auto;
-        text-align: center;
-        margin-bottom: 10%;
+    .heroprofile{
+        order: 2;
+        padding-top: 50px;
     }
 
-    .c1subtitle {
-        margin: auto;
-        margin-bottom: 20px;
-    }
-
-    .c1text {
-        margin: auto;
-    }
-
-    .ctitle2{
-        text-align: center;
-    }
-
-    .s1 {
-        flex-direction: column;
-    }
-
-    .syn {
-        margin-left: 10px;
-    }
-
-    .s1pic {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .s1c {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
+    /* footer */
     footer {
         flex-direction: column;
         justify-content: center;

@@ -262,18 +262,22 @@ hr.new1 {
     margin-top: 8%;
     border: solid transparent;
     width: 151px;
+    display: flex;
     border-radius: 5px;
     background-color: #DD7973;
 }
 
-.button p {
+.button a {
     color: #ffffff;
     text-transform: uppercase;
     text-align: center;
     font-weight: bold;
+    padding: 20px 35px;
+    text-decoration: none;
 }
 
 .button:hover {
+    text-decoration: none;
     background-color: #dd73a2;
 }
 
@@ -352,11 +356,13 @@ hr.new1 {
     border-radius: 5px;
 }
 
-.button2 p {
+.button2 a {
     color: #ffffff;
     text-transform: uppercase;
     text-align: center;
     font-weight: bold;
+    padding: 16px;
+    text-decoration: none;
 }
 
 .button2:hover {
@@ -774,7 +780,7 @@ footer {
     }
 
     .c1 {
-        width: 340px;
+        width: 350px;
         height: 590px;
     }
 
