@@ -495,6 +495,7 @@ hr.new1 {
     border: 1px solid #F3D1BF;
     box-sizing: border-box;
     border-radius: 5px;
+    padding-left: 10px;
 }
 
 .nlsub {
@@ -563,6 +564,7 @@ input[type=email] {
     box-sizing: border-box;
     border-radius: 5px;
     margin: 0 10px 20px;
+    padding-left: 10px;
 }
 
 .info {
@@ -573,6 +575,7 @@ input[type=email] {
     box-sizing: border-box;
     border-radius: 5px;
     margin: 0 10px 20px;
+    padding-left: 10px;
 }
 
 .cubox{

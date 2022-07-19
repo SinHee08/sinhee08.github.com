@@ -212,6 +212,7 @@ input[type=email] {
     box-sizing: border-box;
     border-radius: 5px;
     margin: 0 10px 20px;
+    padding-left: 10px;
 }
 
 .info {
@@ -222,6 +223,7 @@ input[type=email] {
     box-sizing: border-box;
     border-radius: 5px;
     margin: 0 10px 20px;
+    padding-left: 10px;
 }
 
 .cubox {
