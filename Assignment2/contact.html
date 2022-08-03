@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@450;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/294230d258.js" crossorigin="anonymous"></script>
+    <title>Contact</title>
+</head>
+
+<body>
+    <div class="container-fluid p-0" id="container">
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-dark navbar-expand-lg bg-dark fixed-top">
+            <div class="container-fluid">
+                <div id="logo1">
+                    <img src="images/logo.png" alt="Logo">
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" aria-current="page" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="about.html">ABOUT</a>
+                        </li>
+                        <li class="nav-item dropdown mx-2">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                MENU
+                            </a>
+                            <ul class="dropdown-menu bg-dark">
+                                <li><a class="dropdown-item" href="food.html">FOOD</a></li>
+                                <li><a class="dropdown-item" href="beverage.html">BEVERAGE</a></li>
+                                <li><a class="dropdown-item" href="dessert.html">DESSERT</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown mx-2">
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                SERVICES
+                            </a>
+                            <ul class="dropdown-menu bg-dark">
+                                <li><a class="dropdown-item" href="service.html">SERVICE</a></li>
+                                <li><a class="dropdown-item" href="reserve.html">RESERVATION</a></li>
+                                <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                                <li><a class="dropdown-item" href="contact.html">CONTACT US</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown mx-2">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                BLOG
+                            </a>
+                            <ul class="dropdown-menu bg-dark">
+                                <li><a class="dropdown-item" href="blog.html">BLOG</a></li>
+                                <li><a class="dropdown-item" href="gallery.html">GALLERY</a></li>
+                                <li><a class="dropdown-item" href="special.html">SPECIALS</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button class="bookbtn" onclick="location.href = 'reserve.html'">BOOKING NOW ></button>
+                </div>
+            </div>
+        </nav>
+        <!-- header -->
+        <div id="bg1">
+            <div id="bgcon">
+                <h1>Contact Us</h1>
+            </div>
+        </div>
+
+        <!-- contact -->
+        <div id="contact">
+            <div class="ccontent">
+                <img src="images/icons8-location-96.png" alt="location">
+                <h3>Address</h3>
+                <a href="#">No.45 JLN SL Kajang</a>
+            </div>
+
+            <div class="vl hr"></div>
+
+            <div class="ccontent">
+                <img src="images/icons8-telephone-96.png" alt="phone">
+                <h3>Phone Number</h3>
+                <a href="#">019-346 4439</a>
+            </div>
+
+            <div class="hr vl none"></div>
+
+            <div class="ccontent cctop">
+                <img src="images/icons8-mail-96.png" alt="mail">
+                <h3>Email</h3>
+                <a href="mailto:Tsh200132@gmail.com">Tsh200132@gmail.com</a>
+            </div>
+        </div>
+
+        <!-- Contactform -->
+        <div class="contain2">
+            <iframe class="cmap"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.205874912971!2d101.79084735043317!3d3.0394013977757144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc34a92593f6fd%3A0x370a86a8be0523cf!2s45%2C%20Jalan%20SL%201%2F3%2C%20Bandar%20Sungai%20Long%2C%2043000%20Kajang%2C%20Selangor!5e0!3m2!1szh-CN!2smy!4v1659162733390!5m2!1szh-CN!2smy"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <form name="myForm" action="form_submit.html" method="get">
+                <fieldset class="fs">
+                    <legend>Contact Us</legend>
+                    <input type="text" class="name" name="First" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <input type="tel" name="phone" placeholder="Phone Number">
+                    <input type="text" class="box" placeholder="Subject">
+                    <input type="text" class="box" placeholder="Message"><br>
+                    <input type="submit" value="SUBMIT NOW">
+                </fieldset>
+            </form>
+        </div>
+
+        <!-- Banner -->
+        <div class="banner2">
+            <p>Want a different dining experience?</p>
+            <h1>Book a table for you now!</h1>
+            <button class="specialbtn " onclick="location.href = 'special.html'">TRY IT NOW ></button>
+        </div>
+        <!-- Footer -->
+        <div class="tyfooter">
+            <div class="tyflogo">
+                <img class="w-100" src="images/logo.png" alt="Logo">
+            </div>
+            <div class="whours">
+                <h2 class="ftitle">Working Hours</h2>
+                <h3>Saturday - Sunway</h3>
+                <p>10:00 am - 12:00 pm</p>
+                <h3>Tuesday - Friday</h3>
+                <p>10:00 am - 10:00 pm</p>
+                <h4>Monday Close</h4>
+            </div>
+
+            <div class="fcontent">
+                <h2 class="ftitle">Contact Us</h2>
+                <div class="fc">
+                    <div class="fc">
+                        <p><img class="me-1" src="images/phone.png">Phone Number : <br>
+                            <a href="tel:019-3464439">019-3464439</a>
+                        </p>
+                        <p><img class="me-1" src="images/envelope.png">Email Address : <br>
+                            <a href="mailto:tansinhee0083@e.newera.edu.my">tansinhee0083@<br>e.newera.edu.my</a>
+                        </p>
+                        <p><img class="me-1" src="images/location.png"> Locations : <br>
+                            <a href="https://goo.gl/maps/fsmi6dG9eb7DKdfa7" target="_blank">No.45 JLN SL Kajang</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social-icons">
+                <a class="social-icon" href="https://www.facebook.com/tan.sinhee/" target="_blank"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a class="social-icon" href="https://twitter.com/i/flow/login" target="_blank"><i
+                        class="fab fa-twitter ficons"></i></a>
+                <a class="social-icon" href="https://www.instagram.com/tan.sinhee/?hl=en" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
