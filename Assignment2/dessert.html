@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/dessert.css">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@450;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/294230d258.js" crossorigin="anonymous"></script>
+    <title>BessertMenu</title>
+</head>
+
+<body>
+    <div class="container-fluid p-0" id="container">
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-dark navbar-expand-lg bg-dark fixed-top">
+            <div class="container-fluid">
+                <div id="logo1">
+                    <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="about.html">ABOUT</a>
+                        </li>
+                        <li class="nav-item dropdown mx-2">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                MENU
+                            </a>
+                            <ul class="dropdown-menu bg-dark">
+                                <li><a class="dropdown-item" href="food.html">FOOD</a></li>
+                                <li><a class="dropdown-item" href="beverage.html">BEVERAGE</a></li>
+                                <li><a class="dropdown-item" href="dessert.html">DESSERT</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown mx-2">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                SERVICES
+                            </a>
+                            <ul class="dropdown-menu bg-dark">
+                                <li><a class="dropdown-item" href="service.html">SERVICE</a></li>
+                                <li><a class="dropdown-item" href="reserve.html">RESERVATION</a></li>
+                                <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                                <li><a class="dropdown-item" href="contact.html">CONTACT US</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown mx-2">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                BLOG
+                            </a>
+                            <ul class="dropdown-menu bg-dark">
+                                <li><a class="dropdown-item" href="blog.html">BLOG</a></li>
+                                <li><a class="dropdown-item" href="gallery.html">GALLERY</a></li>
+                                <li><a class="dropdown-item" href="special.html">SPECIALS</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button class="bookbtn" onclick="location.href = 'reserve.html'">BOOKING NOW ></button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- header -->
+        <div id="bg1">
+            <div id="bgcon">
+                <h1>Dessert Menu</h1>
+            </div>
+        </div>
+
+        <!-- FoodTitle -->
+        <div class="title">
+            <div class="ftxt">
+                <h1>Top Rate</h1>
+                <p>Please Do Not Miss</p>
+            </div>
+        </div>
+
+        <!-- FoodLogo -->
+        <div class="flogo">
+            <img src="images/foodlogo.png">
+        </div>
+
+        <!-- TopRate -->
+        <div class="bimgbox">
+            <div class="bbox1">
+                <div>
+                    <div class="bimg">
+                        <img src="images/dessert1.jpg" alt="LavaCake">
+                    </div>
+                    <div class="btxt">
+                        <h2>Lava Cake</h2>
+                        <p>A decadent chocolate cake layer cradling a reservoir of smooth, luxurious molten chocolate.
+                            Serve warm to experience a chocolaty eruption that your taste buds are guaranteed to 'lava!
+                            '
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="bbox1">
+                <div>
+                    <div class="bimg">
+                        <img src="images/dessert2.jpg" alt="BerriesCheeseCake">
+                    </div>
+                    <div class="btxt">
+                        <h2>Berries Cheese Cake</h2>
+                        <p>Delve into our Summer Berries Cheese Cake to pair with a drinks, it’s berry good. It’s
+                            creamy, with the taste of berries which bring a lot of flavours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- bannermid -->
+        <div class="banner">
+            <img src="images/dessertbanner.jpg" alt="dessertbanner">
+        </div>
+
+        <!-- MenuTitle -->
+        <div class="title">
+            <div class="ftxt">
+                <h1>Desserts</h1>
+                <p>Ice Cream & Cake Make People Happier</p>
+            </div>
+        </div>
+
+        <!-- MianDishes -->
+        <div class="bmain">
+            <div class="middlebox">
+                <div class="mealbox">
+                    <div class="meal">
+                        <div class="mealname">
+                            <a class="name" data-bs-toggle="modal" data-bs-target="#myModal">Blue Berry Cheese Cake
+                                <img class="logo" src="images/smallmenulogo.png">
+                            </a>
+                            <p class="describe">Cheesecake Drizzle with Blueberries for a Sweet and Sour Contrast</p>
+                        </div>
+                        <div class="price">RM 19.90</div>
+                        <!-- The Modal -->
+                        <div class="modal" id="myModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title w-100">Blue Berry Cheese Cake</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body w-100">
+                                        <img class="mimg" src="images/BlueBerryCheeseCake.jpg">
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="meal">
+                        <div class="mealname">
+                            <a class="name" data-bs-toggle="modal" data-bs-target="#myModal2">Berries Cheese Cake
+                                <img class="logo" src="images/smallmenulogo.png">
+                            </a>
+                            <p class="describe">Cheesecake Drizzle with Raspberries for a Sweet and Sour Contrast</p>
+                        </div>
+                        <div class="price">RM 29.90</div>
+                        <!-- The Modal -->
+                        <div class="modal" id="myModal2">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title w-100">Berries Cheese Cake</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body w-100">
+                                        <img class="mimg" src="images/dessert2.jpg">
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="meal">
+                        <div class="mealname">
+                            <a class="name" data-bs-toggle="modal" data-bs-target="#myModal3">Mocha Chiffon Cake
+                                <img class="logo" src="images/smallmenulogo.png">
+                            </a>
+                            <p class="describe">Soft-coffe and Chocolate-Flavored Layers with a French Buttercream</p>
+                        </div>
+                        <div class="price">RM 25.90</div>
+                        <!-- The Modal -->
+                        <div class="modal" id="myModal3">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title w-100">Mocha Chiffon Cake</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body w-100">
+                                        <img class="mimg" src="images/MochaChiffonCake.jpg">
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="meal">
+                        <div class="mealname">
+                            <p class="name">Mango Cream cake</p>
+                            <p class="describe">Vanilla Sponge Cake Covered in Creamy White Foasting and Topped with
+                                Maggo Compote.</p>
+                        </div>
+                        <div class="price">RM 28.90</div>
+                    </div>
+                    <div class="meal">
+                        <div class="mealname">
+                            <p class="name">White Chocolate Cake</p>
+                            <p class="describe">Buttery Vanilla Cake Topped with a Generous wWhite Choco Ganache</p>
+                        </div>
+                        <div class="price">RM 19.90</div>
+                    </div>
+                    <div class="meal">
+                        <div class="mealname">
+                            <p class="name">Classic Chocolate Cake</p>
+                            <p class="describe">Dark Chocolate Layered Sponge Cake with Fluffy Chocolate Frosting and Strawberry </p>
+                        </div>
+                        <div class="price">RM 19.90</div>
+                    </div>
+                </div>
+                <div class="menumeal">
+                    <img src="images/dessert3.jpg" alt="ChocolateCake">
+                </div>
+            </div>
+
+            <div class="middlebox">
+                <div id="padding" class="mealbox">
+                    <div class="meal">
+                        <div class="mealname">
+                            <a class="name" data-bs-toggle="modal" data-bs-target="#myModal4">Coffee Lover
+                                <img class="logo" src="images/smallmenulogo.png">
+                            </a>
+                            <p class="describe">2 Scoops of Coffee Ice Cream with Cone.</p>
+                        </div>
+                        <div class="price">RM 19.90</div>
+                        <!-- The Modal -->
+                        <div class="modal" id="myModal4">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title w-100">Coffee Lover</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body w-100">
+                                        <img class="mimg" src="images/Coffee Ice Cream.jpg">
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="meal">
+                        <div class="mealname">
+                            <a class="name" data-bs-toggle="modal" data-bs-target="#myModal5">Berry Berry
+                                <img class="logo" src="images/smallmenulogo.png">
+                            </a>
+                            <p class="describe">2 Scoops of Berry Ice Cream with Cone.</p>
+                        </div>
+                        <div class="price">RM 16.90</div>
+                        <!-- The Modal -->
+                        <div class="modal" id="myModal5">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title w-100">Berry Berry</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body w-100">
+                                        <img class="mimg" src="images/berry Ice Cream.jpg">
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="meal">
+                        <div class="mealname">
+                            <a class="name" data-bs-toggle="modal" data-bs-target="#myModal6">Choco Fantasy
+                                <img class="logo" src="images/smallmenulogo.png">
+                            </a>
+                            <p class="describe">2 Scoops of Chocolate Ice Cream with Cone.</p>
+                        </div>
+                        <div class="price">RM 25.90</div>
+                        <!-- The Modal -->
+                        <div class="modal" id="myModal6">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title w-100">Choco Fantasy</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body w-100">
+                                        <img class="mimg" src="images/chocoicecream.jpg">
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="meal">
+                        <div class="mealname">
+                            <p class="name">Lava Cake</p>
+                            <p class="describe">Decadent Chocolate Cake Layer Cradling a Reservoir of Smooth, Luxurious Molten Chocolate.</p>
+                        </div>
+                        <div class="price">RM 16.90</div>
+                    </div>
+                    <div class="meal">
+                        <div class="mealname">
+                            <p class="name">Ice Cream Waffle</p>
+                            <p class="describe">1 Scoop of Vanilla Ice Cream Serve with Waffle and Chocolate Sauce.</p>
+                        </div>
+                        <div class="price">RM 21.90</div>
+                    </div>
+                    <div class="meal">
+                        <div class="mealname">
+                            <p class="name">Double Scoop Waffle</p>
+                            <p class="describe">2 Scoop of Ice Cream Serve with Waffle and Chocolate/Strawberry Sauce</p>
+                        </div>
+                        <div class="price">RM 19.90</div>
+                    </div>
+                </div>
+                <div class="menumeal">
+                    <img src="images/dessert4.jpg" alt="IcecreamWaffle">
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Banner -->
+        <div class="banner2">
+            <p>Want a different dining experience?</p>
+            <h1>Book a table for you now!</h1>
+            <button class="specialbtn " onclick="location.href = 'special.html'">TRY IT NOW ></button>
+        </div>
+        <!-- Footer -->
+        <div class="tyfooter">
+            <div class="tyflogo">
+                <img class="w-100" src="images/logo.png" alt="Logo">
+            </div>
+            <div class="whours">
+                <h2 class="ftitle">Working Hours</h2>
+                <h3>Saturday - Sunday</h3>
+                <p>10:00 am - 12:00 pm</p>
+                <h3>Tuesday - Friday</h3>
+                <p>10:00 am - 10:00 pm</p>
+                <h4>Monday Close</h4>
+            </div>
+
+            <div class="fcontent">
+                <h2 class="ftitle">Contact Us</h2>
+                <div class="fc">
+                    <div class="fc">
+                        <p><img class="me-1" src="images/phone.png">Phone Number : <br>
+                            <a href="tel:019-3464439">019-3464439</a>
+                        </p>
+                        <p><img class="me-1" src="images/envelope.png">Email Address : <br>
+                            <a href="mailto:tansinhee0083@e.newera.edu.my">tansinhee0083@<br>e.newera.edu.my</a>
+                        </p>
+                        <p><img class="me-1" src="images/location.png"> Locations : <br>
+                            <a href="https://goo.gl/maps/fsmi6dG9eb7DKdfa7" target="_blank">No.45 JLN SL Kajang</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social-icons">
+                <a class="social-icon" href="https://www.facebook.com/tan.sinhee/" target="_blank"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a class="social-icon" href="https://twitter.com/i/flow/login" target="_blank"><i
+                        class="fab fa-twitter ficons"></i></a>
+                <a class="social-icon" href="https://www.instagram.com/tan.sinhee/?hl=en" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

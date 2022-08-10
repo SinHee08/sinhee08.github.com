@@ -41,7 +41,7 @@ button {
 }
 
 .navbar .navbar-nav .nav-link {
-    font-size: 1vw;
+    font-size: 1.15vw;
     font-weight: bold;
     transition: ease-out 0.2s;
 }
@@ -64,7 +64,7 @@ button {
 
 /* Header */
 #bg1 {
-    background-image: url("../images/contactbg.png");
+    background-image: url("../images/contactbg.jpg");
     color: white;
     background-size: cover;
     background-repeat: no-repeat;

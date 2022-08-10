@@ -41,7 +41,7 @@ button {
 }
 
 .navbar .navbar-nav .nav-link {
-    font-size: 1vw;
+    font-size: 1.15vw;
     font-weight: bold;
     transition: ease-out 0.2s;
 }
@@ -64,7 +64,7 @@ button {
 
 /* Header */
 #bg1 {
-    background-image: url("../images/abtbg.png");
+    background-image: url("../images/abtbg.jpg");
     color: white;
     background-size: cover;
     background-repeat: no-repeat;
@@ -89,7 +89,7 @@ button {
     margin-top: 2.5%;
     text-align: justify;
     position: relative;
-    max-width: 80%;
+    max-width: 50%;
     margin-right: 8%;
 }
 
@@ -97,17 +97,17 @@ button {
     color: #C09863;
     font-weight: bold;
     margin-bottom: 5%;
+    font-size: 3vw;
 }
 
 #abtcon p {
     color: #000;
-    font-weight: 550;
-    font-size: 1vw;
+    font-size: 1.25vw;
     margin-bottom: 4.5%;
 }
 
 #abtimg {
-    width: 80%;
+    width: 50%;
     margin-top: 2.5%;
 }
 
@@ -131,6 +131,7 @@ button {
     color: #C09863;
     font-weight: bold;
     margin-bottom: 1.5%;
+    font-size: 3vw;
 }
 
 .mimgbox {
@@ -152,13 +153,13 @@ button {
     color: #C09863;
     font-weight: bold;
     text-align: center;
-    font-size: 1.25vw;
+    font-size: 1.5vw;
 }
 
 .mimg p {
     color: white;
     text-align: center;
-    font-size: 1vw;
+    font-size: 1.25vw;
 }
 
 hr.new1 {
@@ -190,12 +191,13 @@ hr.new1 {
     color: #C09863;
     font-weight: bold;
     margin-bottom: 1.5%;
+    font-size: 3vw;
 }
 
 .ctxt p {
     color: black;
     font-weight: 550;
-    font-size: 1vw;
+    font-size: 1.5vw;
 }
 
 .cimgbox {
@@ -220,14 +222,14 @@ hr.new1 {
     color: black;
     font-weight: bold;
     text-align: center;
-    font-size: 1.25vw;
+    font-size: 1.5vw;
 }
 
 .cimg p {
     font-weight: bold;
     opacity: 70%;
     text-align: center;
-    font-size: 1vw;
+    font-size: 1.25vw;
 }
 
 /* Banner */

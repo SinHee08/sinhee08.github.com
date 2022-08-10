@@ -40,7 +40,7 @@ button {
 }
 
 .navbar .navbar-nav .nav-link {
-    font-size: 1vw;
+    font-size: 1.15vw;
     font-weight: bold;
     transition: ease-out 0.2s;
 }
@@ -63,7 +63,7 @@ button {
 
 /* Header */
 #bg1 {
-    background-image: url("../images/servicebg.png");
+    background-image: url("../images/servicebg.jpg");
     color: white;
     background-size: cover;
     background-repeat: no-repeat;
@@ -103,17 +103,17 @@ button {
     color: #C09863;
     font-weight: bold;
     margin-bottom: 1.5%;
-    font-size: 2.2vw;
+    font-size: 3vw;
 }
 
 .deliverytxt h2 {
     font-weight: bold;
-    font-size: 1.25vw;
+    font-size: 1.5vw;
     margin-bottom: 3%;
 }
 
 .deliverytxt p {
-    font-size: 1vw;
+    font-size: 1.25vw;
     margin-bottom: 10%;
 }
 
@@ -161,6 +161,7 @@ button {
 .services {
     background-color: #0E1317;
     padding: 0 7.5%;
+    padding-bottom: 3%;
 }
 
 .stxt {
@@ -173,13 +174,13 @@ button {
     color: white;
     font-weight: bold;
     margin-bottom: 1.5%;
-    font-size: 2.2vw;
+    font-size: 3vw;
 }
 
 .stxt p {
     color: #C09863;
     font-weight: 550;
-    font-size: 1vw;
+    font-size: 1.5vw;
 }
 
 .simgbox {
@@ -201,7 +202,7 @@ button {
     color: white;
     font-weight: bold;
     text-align: center;
-    font-size: 1.25vw;
+    font-size: 1.5vw;
 }
 
 .sbtn {
@@ -228,12 +229,12 @@ button {
     color: #C09863;
     font-weight: bold;
     margin-bottom: 1.5%;
-    font-size: 2.2vw;
+    font-size: 3vw;
 }
 
 .kidzone h2 {
     font-weight: bold;
-    font-size: 1.25vw;
+    font-size: 1.5vw;
     margin-bottom: 2%;
 }
 
@@ -244,7 +245,7 @@ button {
 }
 
 .kidzone p {
-    font-size: 1vw;
+    font-size: 1.25vw;
     text-align: justify;
 }
 
@@ -530,15 +531,15 @@ button {
     }
 
     .whours h3 {
-        font-size: 2.2vw;
+        font-size: 3vw;
     }
 
     .whours p {
-        font-size: 2.2vw;
+        font-size: 3vw;
     }
 
     .whours h4 {
-        font-size: 2.2vw;
+        font-size: 3vw;
     }
 
     .fcontent {
@@ -547,11 +548,11 @@ button {
     }
 
     .fcontent a {
-        font-size: 2.2vw;
+        font-size: 3vw;
     }
 
     .fc p {
-        font-size: 2.2vw;
+        font-size: 3vw;
     }
 
     .social-icons {

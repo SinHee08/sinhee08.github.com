@@ -41,7 +41,7 @@ button {
 }
 
 .navbar .navbar-nav .nav-link {
-    font-size: 1vw;
+    font-size: 1.15vw;
     font-weight: bold;
     transition: ease-out 0.2s;
 }
@@ -65,7 +65,7 @@ button {
 
 /* Header */
 #bg1 {
-    background-image: url("../images/Gallerybg.png");
+    background-image: url("../images/Gallerybg.jpg");
     color: white;
     background-size: cover;
     background-repeat: no-repeat;
@@ -95,12 +95,13 @@ button {
     color: #C09863;
     font-weight: bold;
     margin-bottom: 1.5%;
+    font-size: 3vw;
 }
 
 .gtxt p {
     color: black;
     font-weight: 550;
-    font-size: 1vw;
+    font-size: 1.5vw;
 }
 
 /* Gallery */
@@ -293,11 +294,6 @@ button {
         padding: 18% 10% 12%;
     }
 
-    /* GalleryTitle */
-    .gtxt p {
-        font-size: 2vw;
-    }
-
     /* Gallery */
     .imgbox {
         flex: 1 0 33%;
@@ -419,11 +415,6 @@ button {
     /* Gallery */
     .imgbox {
         flex: 1 0 50%;
-    }
-
-    /* GalleryTitle */
-    .gtxt p {
-        font-size: 4vw;
     }
 
     /* Banner */

@@ -40,7 +40,7 @@ button {
 }
 
 .navbar .navbar-nav .nav-link {
-    font-size: 1vw;
+    font-size: 1.15vw;
     font-weight: bold;
     transition: ease-out 0.2s;
 }
@@ -63,7 +63,7 @@ button {
 
 /* Contents */
 .bg1 {
-    background-image: url("../images/bg1.png");
+    background-image: url("../images/bg1.jpg");
     color: white;
     background-size: cover;
     background-repeat: no-repeat;
@@ -71,7 +71,7 @@ button {
 }
 
 .bg2 {
-    background-image: url("../images/bg2.png");
+    background-image: url("../images/bg2.jpg");
     color: white;
     background-size: cover;
     background-repeat: no-repeat;
@@ -79,7 +79,7 @@ button {
 }
 
 .bg3 {
-    background-image: url("../images/bg3.png");
+    background-image: url("../images/bg3.jpg");
     color: white;
     background-size: cover;
     background-repeat: no-repeat;
@@ -143,23 +143,22 @@ button.carousel-control-prev {
     color: #C09863;
     font-weight: bold;
     margin-bottom: 5%;
-    font-size: 2.2vw;
+    font-size: 3vw;
 }
 
 #abtcon p {
-    font-size: 1vw;
+    font-size: 1.25vw;
     margin-bottom: 4.5%;
-    font-weight: bold;
 }
 
 .rbtn1 {
     position: absolute;
     bottom: 5%;
     right: 0%;
-    width: 18%;
+    width: 22%;
     padding: 1.6% 0 1.1% 0;
     border-radius: 10px;
-    font-size: 0.8vw;
+    font-size: 1vw;
     font-weight: bold;
     margin: 0 3% 0 0;
 }
@@ -194,7 +193,7 @@ button.carousel-control-prev {
     padding: 0.9% 0 0.75% 0;
     margin-top: 2%;
     border-radius: 10px;
-    font-size: 0.8vw;
+    font-size: 1vw;
     font-weight: bold;
 }
 
@@ -211,7 +210,7 @@ button.carousel-control-prev {
 .ourmenu h1 {
     color: #C09863;
     font-weight: bold;
-    font-size: 2.2vw;
+    font-size: 3vw;
 }
 
 .imgcontainer {
@@ -290,13 +289,13 @@ button.carousel-control-prev {
     color: white;
     font-weight: bold;
     margin-bottom: 1.5%;
-    font-size: 2.2vw;
+    font-size: 3vw;
 }
 
 .stxt p {
     color: #C09863;
     font-weight: 550;
-    font-size: 1vw;
+    font-size: 1.5vw;
 }
 
 .simgbox {
@@ -318,14 +317,14 @@ button.carousel-control-prev {
     color: white;
     font-weight: bold;
     text-align: center;
-    font-size: 1.25vw;
+    font-size: 1.5vw;
 }
 
 .sbtn {
     width: 11.5%;
     padding: 0.85% 0 0.65% 0;
     border-radius: 10px;
-    font-size: 0.85vw;
+    font-size: 1vw;
     font-weight: bold;
     margin: 0 0 3%;
 }
@@ -350,13 +349,13 @@ button.carousel-control-prev {
     color: #C09863;
     font-weight: bold;
     margin-bottom: 1.5%;
-    font-size: 2.2vw;
+    font-size: 3vw;
 }
 
 .ctxt p {
     color: black;
     font-weight: 550;
-    font-size: 1vw;
+    font-size: 1.5vw;
 }
 
 .cimgbox {
@@ -379,11 +378,11 @@ button.carousel-control-prev {
     color: black;
     font-weight: bold;
     text-align: center;
-    font-size: 1.4vw;
+    font-size: 1.5vw;
 }
 
 .cimg p {
-    font-size: 1.2vw;
+    font-size: 1.25vw;
     font-weight: bold;
     margin: 1% 0;
     opacity: 0.7;
@@ -405,7 +404,7 @@ button.carousel-control-prev {
     color: white;
     font-weight: bold;
     margin-bottom: 1.5%;
-    font-size: 2.2vw;
+    font-size: 3vw;
 }
 
 .gimg {
@@ -447,7 +446,7 @@ button.carousel-control-prev {
     color: #C09863;
     font-weight: bold;
     margin-bottom: 1.5%;
-    font-size: 2.2vw;
+    font-size: 3vw;
 }
 
 .bimgbox {
@@ -481,18 +480,18 @@ button.carousel-control-prev {
 }
 
 .btxt h4 {
-    font-size: 0.7vw;
+    font-size: 0.85vw;
     margin: 5% 0 2% 0;
     color: #C09863;
 }
 
 .btxt h2 {
     font-weight: bold;
-    font-size: 1.1vw;
+    font-size: 1.25vw;
 }
 
 .btxt p {
-    font-size: 0.85vw;
+    font-size: 1vw;
 }
 
 /* Banner */
@@ -602,7 +601,7 @@ button.carousel-control-prev {
     margin-right: 0.5rem;
     text-decoration: none;
     transition: 0.3s;
-    
+
 }
 
 .social-icons .social-icon:hover {
@@ -823,7 +822,7 @@ button.carousel-control-prev {
     }
 
     .btxt h4 {
-        font-size: 1.2vw;
+        font-size: 1.25vw;
     }
 
     .btxt h2 {
@@ -832,7 +831,7 @@ button.carousel-control-prev {
     }
 
     .btxt p {
-        font-size: 1.4vw;
+        font-size: 1.5vw;
     }
 
     /* Banner */
@@ -863,15 +862,15 @@ button.carousel-control-prev {
     }
 
     .whours h3 {
-        font-size: 2.2vw;
+        font-size: 3vw;
     }
 
     .whours p {
-        font-size: 2.2vw;
+        font-size: 3vw;
     }
 
     .whours h4 {
-        font-size: 2.2vw;
+        font-size: 3vw;
     }
 
     .fcontent {
@@ -880,11 +879,11 @@ button.carousel-control-prev {
     }
 
     .fcontent a {
-        font-size: 2.2vw;
+        font-size: 3vw;
     }
 
     .fc p {
-        font-size: 2.2vw;
+        font-size: 3vw;
     }
 
     .social-icons {

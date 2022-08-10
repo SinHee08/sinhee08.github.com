@@ -1,0 +1,495 @@
+#container {
+    background-color: #F9F5EC;
+    max-width: 1920px;
+    margin: auto;
+    font-family: 'Epilogue', sans-serif;
+}
+
+/* Buttons Section */
+button {
+    border: none;
+    color: white;
+    background-color: #C09863;
+    background-image: linear-gradient(to right, transparent 50%, white 50%);
+    background-size: 210%;
+    background-position: 0%;
+    transition: ease-out 0.5s;
+    align-items: center;
+    text-align: center;
+}
+
+/* Navigation Bar */
+#logo1 {
+    width: 12%;
+}
+
+#logo1 img {
+    width: 100%;
+}
+
+.bookbtn {
+    width: 8.5%;
+    padding: 0.75% 0 0.65% 0;
+    border-radius: 10px;
+    font-size: 0.7vw;
+    font-weight: bold;
+}
+
+.bookbtn:hover {
+    color: #C09863;
+    background-position: 100%;
+}
+
+.navbar .navbar-nav .nav-link {
+    font-size: 1.15vw;
+    font-weight: bold;
+    transition: ease-out 0.2s;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #C09863;
+    transform: scale(1.1);
+}
+
+.dropdown .dropdown-item {
+    font-size: 1vw;
+    color: white;
+}
+
+.dropdown .dropdown-item:hover {
+    background-color: #C09863;
+    color: black;
+
+}
+
+/* Header */
+#bg1 {
+    background-image: url("../images/Specialbg.jpg");
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#bgcon {
+    padding: 10.3% 16%;
+}
+
+#bgcon h1 {
+    font-size: 4.75vw;
+    font-weight: bold;
+}
+
+/* SpecialTitle */
+.title {
+    text-align: center;
+}
+
+.stxt {
+    margin: 0 10%;
+    padding-top: 4%;
+    text-align: center;
+}
+
+.stxt h1 {
+    color: #C09863;
+    font-weight: bold;
+    margin-bottom: 1.5%;
+    font-size: 3vw;
+}
+
+/* Special */
+.contentbreak2 {
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 5%;
+}
+
+.ctitle {
+    color: black;
+    font-size: 1.5vw;
+    font-weight: bold;
+    margin-top: 5%;
+    margin-bottom: 0;
+}
+
+.s1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.s1pic {
+    flex: 1;
+}
+
+.s1pic img {
+    width: 100%;
+}
+
+.s1c {
+    flex: 2;
+    background-color: white;
+    padding: 2%;
+}
+
+.csubtitle2 {
+    color: black;
+    font-size: 1.5vw;
+    font-weight: bold;
+    margin-left: 3%;
+}
+
+.cparagraph {
+    color: #000000;
+    font-size: 1.25vw;
+    line-height: 1.5;
+    margin: 0 3%;
+    text-align: justify;
+}
+
+/* Banner */
+.banner2 {
+    background-image: url("../images/hspecialbg.png");
+    padding: 2% 5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.banner2 p {
+    color: #C09863;
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+.banner2 h1 {
+    font-size: 3.25vw;
+    font-weight: bold;
+}
+
+.specialbtn {
+    width: 10%;
+    padding: 0.9% 0 0.75% 0;
+    margin-top: 2%;
+    border-radius: 10px;
+    font-size: 1vw;
+    font-weight: bold;
+}
+
+.specialbtn:hover {
+    color: #C09863;
+    background-position: 100%;
+}
+
+/* Footer */
+.tyfooter {
+    display: flex;
+    background-color: #0E1317;
+    padding: 2% 5%;
+}
+
+.tyflogo {
+    width: 15%;
+    margin-right: 10%;
+}
+
+.ftitle {
+    color: white;
+    font-size: 1.7vw;
+    font-weight: bold;
+    margin-bottom: 3%;
+    padding-top: 3%;
+}
+
+.whours {
+    width: 30%;
+}
+
+.whours h3 {
+    color: white;
+    font-weight: bold;
+    font-size: 1.1vw;
+    margin: 2% 0 0.5% 0;
+}
+
+.whours p {
+    color: #C09863;
+    font-size: 1.1vw;
+    margin: 0.5% 0 2% 0;
+}
+
+.whours h4 {
+    color: #EF6D58;
+    font-weight: bold;
+    font-size: 1.1vw;
+}
+
+.fcontent {
+    flex-direction: column;
+    width: 30%;
+}
+
+.fcontent a {
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.fcontent a:hover {
+    opacity: 0.8;
+}
+
+.fc {
+    color: #ffffff;
+}
+
+.social-icons {
+    width: 15%;
+
+}
+
+.social-icons .social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #C09863;
+    color: #fff;
+    border-radius: 100%;
+    margin-top: 1%;
+    margin-right: 0.5rem;
+    text-decoration: none;
+}
+
+.social-icons .social-icon a {
+    color: #bd5d38;
+    text-decoration: underline;
+}
+
+.social-icons .social-icon a:hover {
+    opacity: 0.8;
+}
+
+@media screen and (min-width:450px) and (max-width:834px) {
+
+    /* Navigation Bar */
+    #logo1 {
+        width: 20%;
+    }
+
+    .bookbtn {
+        display: none;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        font-size: 1.75vw;
+    }
+
+    .dropdown .dropdown-item {
+        font-size: 1.75vw;
+    }
+
+    /* Header */
+    #bgcon {
+        padding: 18% 10% 12%;
+    }
+
+    /* Banner */
+    .banner2 h1 {
+        font-size: 4.75vw;
+    }
+
+    .banner2 p {
+        font-size: 2vw;
+    }
+
+    .specialbtn {
+        width: 16.8%;
+        font-size: 1.5vw;
+        padding: 1.45% 0 1% 0;
+    }
+
+    /* Footer */
+    .tyfooter {
+        flex-wrap: wrap;
+    }
+
+    .tyflogo {
+        width: 30%;
+    }
+
+    .whours {
+        width: 50%;
+        margin-left: 10%;
+    }
+
+    .ftitle {
+        font-size: 3.5vw;
+    }
+
+    .whours h3 {
+        font-size: 2.2vw;
+    }
+
+    .whours p {
+        font-size: 2.2vw;
+    }
+
+    .whours h4 {
+        font-size: 2.2vw;
+    }
+
+    .fcontent {
+        width: 50%;
+        padding-left: 1%;
+    }
+
+    .fcontent a {
+        font-size: 2.2vw;
+    }
+
+    .fc p {
+        font-size: 2.2vw;
+    }
+
+    .social-icons {
+        width: 50%;
+        padding-top: 3%;
+    }
+
+    .social-icons .social-icon {
+        width: 15%;
+        height: 20%;
+    }
+}
+
+@media screen and (max-width:450px) {
+
+    /* Navigation bar */
+    #logo1 {
+        width: 40%;
+    }
+
+    .bookbtn {
+        display: none;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        font-size: 4vw;
+    }
+
+    .dropdown .dropdown-item {
+        font-size: 4vw;
+    }
+
+    /* Header */
+    #bg1 {
+        background-size: cover;
+        height: 30vh;
+    }
+
+    #bgcon {
+        padding: 30% 16%;
+    }
+
+    #bgcon h1 {
+        font-size: 7vw;
+    }
+
+    /* Special */
+    .s1 {
+        flex-direction: column;
+    }
+
+    .ctitle {
+        font-size: 5vw;
+    }
+
+    .csubtitle2 {
+        font-size: 5vw;
+    }
+
+    .cparagraph {
+        font-size: 4vw;
+    }
+
+    /* Banner */
+    .banner2 {
+        text-align: center;
+    }
+
+    .banner2 h1 {
+        font-size: 6vw;
+    }
+
+    .banner2 p {
+        font-size: 4vw;
+    }
+
+    .specialbtn {
+        width: 32%;
+        font-size: 3vw;
+        padding: 3% 0 1.75% 0;
+    }
+
+    /* Footer */
+    .tyfooter {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .tyflogo {
+        width: 70%;
+        margin: 5% 0;
+    }
+
+    .whours {
+        width: 80%;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+
+    .ftitle {
+        font-size: 6vw;
+    }
+
+    .whours h3 {
+        font-size: 4.5vw;
+    }
+
+    .whours p {
+        font-size: 4.5vw;
+    }
+
+    .whours h4 {
+        font-size: 4.5vw;
+    }
+
+    .fcontent {
+        width: 80%;
+        text-align: center;
+    }
+
+    .fcontent a {
+        font-size: 3.8vw;
+    }
+
+    .fc p {
+        font-size: 4.5vw;
+    }
+
+    .social-icons {
+        width: 80%;
+        justify-content: center;
+    }
+
+    .social-icons .social-icon {
+        height: 55px;
+        width: 55px;
+        justify-content: center;
+
+    }
+}
