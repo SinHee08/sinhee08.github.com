@@ -413,6 +413,14 @@ button {
     }
 
     /* Gallery */
+    .gtxt h1{
+        font-size: 6vw;
+    }
+
+    .gtxt p{
+        font-size: 4vw;
+    }
+
     .imgbox {
         flex: 1 0 50%;
     }

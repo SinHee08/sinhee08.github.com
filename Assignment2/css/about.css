@@ -554,6 +554,10 @@ hr.new1 {
         margin-right: 0%;
     }
 
+    #abtcon h1{
+        font-size: 6vw;
+    }
+
     #abtcon p {
         font-weight: unset;
         font-size: 4vw;
