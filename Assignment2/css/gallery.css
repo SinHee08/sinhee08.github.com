@@ -106,39 +106,26 @@ button {
 
 /* Gallery */
 .gallery {
-    display: flex;
-    flex-flow: row wrap;
     max-width: 80%;
     margin: auto;
     margin-top: 2%;
     margin-bottom: 5%;
 }
 
-.imgbox {
-    flex: 1 0 25%;
-    min-height: 25vh;
-    margin: 2.5%;
+.row a {
+    margin: 2% 0;
     cursor: pointer;
     transition: 0.5s;
 }
 
-.imgbox:hover {
+.row a:hover {
     transform: scale(1.1);
 }
 
-.imgbox img {
+.row a img {
     width: 100%;
     border-radius: 15px;
     box-shadow: 6px 6px 10px #aaaaaa;
-}
-
-/* Model */
-.modal {
-    text-align: center;
-}
-
-.mimg {
-    width: 100%;
 }
 
 /* Banner */
@@ -413,16 +400,17 @@ button {
     }
 
     /* Gallery */
-    .gtxt h1{
+
+    .gtxt h1 {
         font-size: 6vw;
     }
 
-    .gtxt p{
+    .gtxt p {
         font-size: 4vw;
     }
 
-    .imgbox {
-        flex: 1 0 50%;
+    .row a {
+        margin: 3% 0;
     }
 
     /* Banner */

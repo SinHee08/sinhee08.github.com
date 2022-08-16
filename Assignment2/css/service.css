@@ -513,6 +513,7 @@ button {
     }
 
     /* Footer */
+    /* Footer */
     .tyfooter {
         flex-wrap: wrap;
     }
@@ -531,15 +532,15 @@ button {
     }
 
     .whours h3 {
-        font-size: 3vw;
+        font-size: 2.2vw;
     }
 
     .whours p {
-        font-size: 3vw;
+        font-size: 2.2vw;
     }
 
     .whours h4 {
-        font-size: 3vw;
+        font-size: 2.2vw;
     }
 
     .fcontent {
@@ -548,11 +549,11 @@ button {
     }
 
     .fcontent a {
-        font-size: 3vw;
+        font-size: 2.2vw;
     }
 
     .fc p {
-        font-size: 3vw;
+        font-size: 2.2vw;
     }
 
     .social-icons {

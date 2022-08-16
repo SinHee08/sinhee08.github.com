@@ -397,11 +397,12 @@ button {
         font-size: 7vw;
     }
 
-    /* Special */
+    /* SpecialTitle */
     .stxt h1{
         font-size: 6vw;
     }
-    
+
+    /* Special */
     .s1 {
         flex-direction: column;
     }

@@ -96,6 +96,7 @@ form {
     border: #C09863 solid 3px;
     border-radius: 15px;
     padding: 3% 2%;
+    width: 60%;
 }
 
 .hreservecon {
@@ -159,10 +160,9 @@ input[type=button]:hover {
     margin-left: 5%;
     width: 40%;
     border-radius: 15px;
-}
-
-.reserveimg img {
-    width: 100%;
+    background-image: url("../images/reserve1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* Banner */

@@ -367,6 +367,7 @@ button {
         font-size: 7vw;
     }
 
+    /* FAQTitle */
     .ftxt h1{
         font-size: 6vw;
     }
@@ -374,7 +375,7 @@ button {
     .ftxt p{
         font-size: 4vw;
     }
-    
+
     /* Banner */
     .banner2 {
         text-align: center;
