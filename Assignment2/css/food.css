@@ -230,7 +230,7 @@ button {
     font-size: 1vw;
     font-weight: bold;
     color: #C09863;
-    padding-left: 23%;
+    padding-left: 20%;
     width: 40%;
 }
 
@@ -574,11 +574,11 @@ button {
         margin: 2.5% 0 5%;
         max-width: 80%;
         margin: auto;
-    }
+    }   
 
     .bbox1 {
         width: 100%;
-        margin: 4% 0;
+        margin: 8% 0;
     }
 
     .btxt h2 {
@@ -622,7 +622,7 @@ button {
 
     .price {
         font-size: 3vw;
-        padding-left: 19%;
+        padding-left: 15%;
     }
 
     /* Banner */

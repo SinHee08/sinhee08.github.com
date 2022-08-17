@@ -407,6 +407,11 @@ button {
         flex-direction: column;
     }
 
+    .s1c{
+        padding: 4.5%;
+        margin-bottom: 5%;
+    }
+
     .ctitle {
         font-size: 5vw;
     }
