@@ -130,8 +130,8 @@ input {
     margin: 1.5%;
 }
 
-input[type=button] {
-    width: 23%;
+input[type=submit] {
+    width: 25%;
     color: white;
     background-color: #C09863;
     padding: 1.8% 1% 1.5% 1%;
