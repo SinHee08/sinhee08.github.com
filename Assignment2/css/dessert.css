@@ -669,7 +669,7 @@ button {
     }
 
     .ftitle {
-        font-size: 7vw;
+        font-size: 6vw;
     }
 
     .whours h3 {
@@ -690,6 +690,10 @@ button {
     }
 
     .fcontent a {
+        font-size: 3.8vw;
+    }
+
+    .fc p {
         font-size: 4.5vw;
     }
 
