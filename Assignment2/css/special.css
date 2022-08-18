@@ -243,6 +243,12 @@ button {
     color: #ffffff;
 }
 
+.fc p {
+    color: #C09863;
+    font-size: 1.1vw;
+    font-weight: bold;
+}
+
 .social-icons {
     width: 15%;
 
@@ -398,7 +404,7 @@ button {
     }
 
     /* SpecialTitle */
-    .stxt h1{
+    .stxt h1 {
         font-size: 6vw;
     }
 
@@ -407,7 +413,7 @@ button {
         flex-direction: column;
     }
 
-    .s1c{
+    .s1c {
         padding: 4.5%;
         margin-bottom: 5%;
     }
