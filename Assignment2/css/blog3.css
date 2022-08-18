@@ -64,7 +64,7 @@ button {
 
 /* Header */
 #bg1 {
-    background-image: url("../images/blogbg.png");
+    background-image: url("../images/blogbg.jpg");
     color: white;
     background-size: cover;
     background-repeat: no-repeat;
@@ -173,18 +173,17 @@ button {
 }
 
 .specialbtn {
-    width: 15%;
-    padding: 1.35% 0 0.75% 0;
+    width: 10%;
+    padding: 0.9% 0 0.75% 0;
     margin-top: 2%;
     border-radius: 10px;
-    font-size: 1.2vw;
+    font-size: 1vw;
     font-weight: bold;
 }
 
 .specialbtn:hover {
     color: #C09863;
     background-position: 100%;
-    border: #C09863 1px solid;
 }
 
 /* Footer */
