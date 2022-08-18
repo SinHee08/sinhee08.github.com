@@ -150,7 +150,7 @@ input[type=submit] {
     margin-top: 5%;
 }
 
-input[type=button]:hover {
+input[type=submit]:hover {
     background-position: 100%;
     color: #C09863;
 }
@@ -346,7 +346,7 @@ input[type=button]:hover {
         font-size: 1vw;
     }
 
-    input[type=button] {
+    input[type=submit] {
         font-size: 1.5vw;
     }
 
@@ -494,7 +494,7 @@ input[type=button]:hover {
         font-size: 1vw;
     }
 
-    input[type=button] {
+    input[type=submit] {
         width: 48%;
         font-size: 3vw;
     }
