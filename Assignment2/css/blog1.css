@@ -41,7 +41,7 @@ button {
 }
 
 .navbar .navbar-nav .nav-link {
-    font-size: 1vw;
+    font-size: 1.15vw;
     font-weight: bold;
     transition: ease-out 0.2s;
 }
