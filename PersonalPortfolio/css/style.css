@@ -107,4 +107,11 @@ section{
     font-size: 2rem;
     color: var(--main-clor);
     margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+}
+
+.social-media a:hover{
+    background-color: var(--main-clor);
+    color:var(--second-bg-color);
+    box-shadow: 0 0 1rem var(--main-clor);
 }
