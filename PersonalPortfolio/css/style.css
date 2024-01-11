@@ -85,6 +85,14 @@ section{
     font-weight: 700;
 }
 
+.home-content h3:nth-of-type(2)/*这段代码的作用是选择 .home-content 类下的第二个 <h3> 元素，并为其设置下边距为 2 个 rem*/{
+    margin-bottom: 2rem;
+}
+
+span{
+    color: var(--main-clor);
+}
+
 .home-content h1{
     font-size: 5.6rem;
     font-weight: 700;
@@ -114,4 +122,21 @@ section{
     background-color: var(--main-clor);
     color:var(--second-bg-color);
     box-shadow: 0 0 1rem var(--main-clor);
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-clor);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-clor);
+    font-size: 1.6rem;
+    color: var(--second-bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+.btn:hover{
+    box-shadow: none;
 }
