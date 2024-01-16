@@ -30,7 +30,11 @@ window.onscroll = () => {
 
                 // 为当前正在视窗中显示的 <section> 对应的导航栏链接添加 'active' 类
                 document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
-            })
+            });
         };
-    })
-}
+    });
+    /*==========scroll sections avtive link==========*/
+    let header = document.querySelector('header');
+
+    header.classList.toggle('sticky', window.scrollY > 100);
+};
