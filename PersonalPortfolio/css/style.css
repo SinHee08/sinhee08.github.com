@@ -314,4 +314,14 @@ span{
     font-size: 1.6rem;
     color: var(--text-color);
     background-color: var(--second-bg-color);
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+
+.contact form .input-box input{
+    width: 49%;
+}
+
+.contact form textarea{
+    resize: none;
 }
