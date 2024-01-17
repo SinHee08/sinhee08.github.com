@@ -1,3 +1,12 @@
+    /*==========scroll sections avtive link==========*/
+    let menuIcon = document.querySelector('#menu-icon');
+    let navbar = document.querySelector('.navbar');
+
+    menuIcon.onlick = () => {
+        menuIcon.classList.toggle('bx-x');
+        navbar.classList.toggle('active');
+    };
+
 /*==========scroll sections avtive link==========*/
 // 选取所有 <section> 元素，存储在名为 sections 的变量中
 let sections = document.querySelectorAll('section');
@@ -34,10 +43,6 @@ window.onscroll = () => {
         };
     });
 
-    /*==========scroll sections avtive link==========*/
-    let sections = document.querySelectorAll('section');
-    let navLinks = document.querySelectorAll('header nav a');
-    
     /*==========scroll sections avtive link==========*/
     let header = document.querySelector('header');
 
