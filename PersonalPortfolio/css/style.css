@@ -348,7 +348,7 @@ span{
     font-size: 1.6rem;
 }
 
-.footer-iconTop{
+.footer-iconTop a{
     display: inline-flex;
     justify-content: center;
     align-items: center;
