@@ -388,7 +388,7 @@ span{
     }
 }
 
-@media (max-width:991px){
+@media (max-width: 768px){
     #menu-icon {
         display: block;
     }
