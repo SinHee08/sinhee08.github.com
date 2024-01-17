@@ -393,6 +393,7 @@ span{
     }
     
     section {
+        min-height: auto;
         padding: 10rem 3% 2rem;
     }
 
