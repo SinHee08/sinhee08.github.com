@@ -1,0 +1,154 @@
+#container {
+    background-color: #4B878BFF;
+    padding: 10px;
+    max-width: 1920px;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.logo {
+    width: 40%;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.badan{
+    display:flex;
+}
+
+.menu{
+    width: 30%;
+    background-color: antiquewhite;
+    border: solid;
+    text-align: center;
+    margin: 10px;
+}
+
+.menu h2 {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu h2:hover {
+    text-decoration: underline;
+    background-color: #ddd;
+    color: #29c5f6;
+}
+
+.rightbadan{
+    flex-direction: column;
+    width: 70%;
+}
+
+.topbadan{
+    display: flex;
+}
+
+.main{
+    width: 50%;
+    background-color: antiquewhite;
+    border: solid;
+    margin:10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.right{
+    width:50%;
+    height: 400px;
+    background-size: cover;
+    background-image: url(../images/ultraman-beam\ \(1\).gif);
+    background-color: antiquewhite;
+    border: solid;
+    margin:10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer{
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    background-color: antiquewhite;
+    border: solid;
+}
+
+.botnav {
+    display: flex;
+    border: solid;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    margin: 5px;
+    background-color: aliceblue;
+}
+
+/* Tablet */
+@media screen and (max-width: 1024px) and (min-width: 600px) {
+    .badan{
+        flex-direction: column;
+    }
+
+    .menu{
+        width: auto;
+    }
+
+    .menu h2 {
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        margin: 0%;
+    }
+    
+    .rightbadan{
+        width: auto;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 600px){
+    .badan{
+        flex-direction: column;
+    }
+
+    .menu{
+        width: auto;
+    }
+
+    .menu h2 {
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        margin: 0%;
+    }
+    
+    .rightbadan{
+        width: auto;
+    }
+
+    .topbadan{
+        flex-direction: column;
+    }
+
+    .main{
+        width: auto;
+    }
+
+    .right{
+        width: auto;
+        height: 250px;
+    }
+}
+

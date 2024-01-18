@@ -1,0 +1,161 @@
+#container {
+    background-color: #4B878BFF;
+    padding: 10px;
+    max-width: 1024px;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 40%;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c0c0c0;
+    margin-bottom: 10px;
+}
+
+.menu a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+    background-color: #ddd;
+    color: #29c5f6;
+}
+
+.automactic-sliding{
+    width: 95vmin;
+    position: absolute;
+    transform: translate(-40%,40%);
+    top:50%;
+    left: 50%;
+    overflow: hidden;
+    border: 10px solid #ffffff;
+    border-radius: 8px;
+    box-shadow: 10px 25px 30px rgba(0, 0, 0, 0.3);
+}
+
+div#slide { overflow: hidden;}
+div#slide figure img {width: 20%; float: left;}
+div#slide figure{
+    position: relative;
+    width:500%;
+    margin:0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 20s sliding ease infinite;
+}
+
+.indicator{
+    width: 100%;
+    max-width: 900px;
+    height: 8px;
+    position: absolute;
+    bottom: 0;
+    animation: indicating 5s ease infinite;
+}
+
+@keyframes sliding{
+    0%{left:0%}
+    20%{left: -100%;}
+    40%{left: -200%;}
+    60%{left: 0%;}
+}
+
+@keyframes indicating{
+    from{
+        left:-100%;
+    }
+    to{left:0};
+}
+
+.feat {
+    display: flex;
+    background-color: #c0c0c0;
+    margin-top: 10px;
+}
+
+.column {
+    width: 25%;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    border: solid;
+    background-color: #a0b5b5;
+}
+
+.row {
+    display: flex;
+    margin-top: 20px;
+    background-color: #c0c0c0;
+}
+
+.content {
+    width: 60%;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border: solid;
+    background-color:azure;
+}
+
+.sidebar {
+    width: 40%;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border: solid;
+    background-color: antiquewhite;
+}
+
+.footer{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    background-color: #f1f1f1;
+}
+
+.footer h2{
+    justify-content: center;
+    align-items: center;
+}
+
+/* Mobile */
+@media screen and (max-width: 600px){
+
+    .feat{
+        flex-direction:column;
+    }
+    .column{
+        width: auto;
+        padding: 0px;
+    }
+    .row{
+        flex-direction:column;
+    }
+    .content{
+        width: auto;
+    }
+    .sidebar{
+        width: auto;
+    }
+}

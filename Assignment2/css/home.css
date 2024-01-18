@@ -1,0 +1,1225 @@
+#container {
+    background-color: #F9F5EC;
+    max-width: 1920px;
+    font-family: 'Epilogue', sans-serif;
+}
+
+/* Buttons Section */
+button {
+    border: none;
+    color: white;
+    background-color: #C09863;
+    background-image: linear-gradient(to right, transparent 50%, white 50%);
+    background-size: 210%;
+    background-position: 0%;
+    transition: ease-out 0.5s;
+    align-items: center;
+    text-align: center;
+}
+
+/* Navigation Bar */
+#logo1 {
+    width: 12%;
+}
+
+#logo1 img {
+    width: 100%;
+}
+
+.bookbtn {
+    width: 8.5%;
+    padding: 0.75% 0 0.65% 0;
+    border-radius: 10px;
+    font-size: 0.7vw;
+    font-weight: bold;
+}
+
+.bookbtn:hover {
+    color: #C09863;
+    background-position: 100%;
+}
+
+.navbar .navbar-nav .nav-link {
+    font-size: 1.15vw;
+    font-weight: bold;
+    transition: ease-out 0.2s;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #C09863;
+    transform: scale(1.1);
+}
+
+.dropdown .dropdown-item {
+    font-size: 1vw;
+    color: white;
+}
+
+.dropdown .dropdown-item:hover {
+    background-color: #C09863;
+    color: black;
+
+}
+
+/* Contents */
+.bg1 {
+    background-image: url("../images/bg1.jpg");
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 13.3% 10% 8.3%;
+}
+
+.bg2 {
+    background-image: url("../images/bg2.jpg");
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 13.3% 10% 8.3%;
+}
+
+.bg3 {
+    background-image: url("../images/bg3.jpg");
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 13.3% 10% 8.3%;
+}
+
+.bgcon h2 {
+    font-size: 2.75vw;
+    font-weight: bold;
+    margin: 2% 0 0;
+}
+
+.bgcon h1 {
+    font-size: 4.75vw;
+    font-weight: bold;
+    margin: 3% 0;
+}
+
+.hbtn {
+    width: 12%;
+    padding: 0.95% 0 0.75% 0;
+    border-radius: 10px;
+    font-size: 0.9vw;
+    font-weight: bold;
+    margin: 5% 0 0;
+}
+
+.hbtn:hover {
+    color: #C09863;
+    background-position: 100%;
+}
+
+button.carousel-control-next,
+button.carousel-control-prev {
+    width: 10%;
+}
+
+/* About Us */
+.abt {
+    margin: 5% 14%;
+}
+
+#abtimg {
+    width: 80%;
+    margin-right: 5%;
+}
+
+#abtimg img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+#abtcon {
+    width: 120%;
+    margin-top: 2.5%;
+    text-align: justify;
+    position: relative;
+}
+
+#abtcon h1 {
+    color: #C09863;
+    font-weight: bold;
+    margin-bottom: 5%;
+    font-size: 3vw;
+}
+
+#abtcon p {
+    font-size: 1.25vw;
+    margin-bottom: 4.5%;
+}
+
+.rbtn1 {
+    position: absolute;
+    bottom: 5%;
+    right: 0%;
+    width: 22%;
+    padding: 1.6% 0 1.1% 0;
+    border-radius: 10px;
+    font-size: 1vw;
+    font-weight: bold;
+    margin: 0 3% 0 0;
+}
+
+.rbtn1:hover {
+    color: #C09863;
+    background-position: 100%;
+    border: solid #C09863 1.5px;
+}
+
+/* Special */
+.hspecial {
+    background-image: url("../images/hspecialbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding: 5%;
+}
+
+.hspecial h1 {
+    font-size: 4.75vw;
+    font-weight: bold;
+}
+
+.hspecial p {
+    font-size: 1.5vw;
+}
+
+.specialbtn {
+    width: 10%;
+    padding: 0.9% 0 0.75% 0;
+    margin-top: 2%;
+    border-radius: 10px;
+    font-size: 1vw;
+    font-weight: bold;
+}
+
+.specialbtn:hover {
+    color: #C09863;
+    background-position: 100%;
+}
+
+/* Our Menu */
+.ourmenu {
+    margin: 5% 7.5%;
+}
+
+.ourmenu h1 {
+    color: #C09863;
+    font-weight: bold;
+    font-size: 3vw;
+}
+
+.imgcontainer {
+    display: flex;
+    justify-content: center;
+    margin: 3% 0;
+}
+
+.imgbox {
+    position: relative;
+    width: 25%;
+    margin: 0 2.5%;
+    border-radius: 10px;
+}
+
+.menuimg {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.menuimg img {
+    width: 100%;
+    box-shadow: 10px 10px 15px #aaaaaa;
+}
+
+.txtmiddle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.imgbox:hover .txtmiddle {
+    opacity: 0.75;
+
+}
+
+.menutxt {
+    color: white;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+/* Our Menu Tablet and Mobile*/
+.ourmenu2 {
+    display: none;
+}
+
+/* Our Services */
+.services {
+    background-color: #0E1317;
+    padding: 0 7.5%;
+}
+
+.stxt {
+    margin: 0 10%;
+    padding-top: 5%;
+    text-align: center;
+}
+
+.stxt h1 {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 1.5%;
+    font-size: 3vw;
+}
+
+.stxt p {
+    color: #C09863;
+    font-weight: 550;
+    font-size: 1.5vw;
+}
+
+.simgbox {
+    display: flex;
+    justify-content: center;
+}
+
+.simg {
+    width: 25%;
+    margin: 2.5% 2.5% 1.5%;
+}
+
+.simg img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.simg h2 {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.sbtn {
+    width: 11.5%;
+    padding: 0.85% 0 0.65% 0;
+    border-radius: 10px;
+    font-size: 1vw;
+    font-weight: bold;
+    margin: 0 0 3%;
+}
+
+.sbtn:hover {
+    background-position: 100%;
+    color: #C09863;
+}
+
+/* Our Chef */
+.ourchef {
+    padding: 0 7.5%;
+}
+
+.ctxt {
+    margin: 0 10%;
+    padding-top: 4%;
+    text-align: center;
+}
+
+.ctxt h1 {
+    color: #C09863;
+    font-weight: bold;
+    margin-bottom: 1.5%;
+    font-size: 3vw;
+}
+
+.ctxt p {
+    color: black;
+    font-weight: 550;
+    font-size: 1.5vw;
+}
+
+.cimgbox {
+    display: flex;
+    justify-content: center;
+}
+
+.cimg {
+    width: 25%;
+    margin: 2.5%;
+}
+
+.cimg img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 6px 6px 10px #aaaaaa;
+}
+
+.cimg h2 {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.cimg p {
+    font-size: 1.25vw;
+    font-weight: bold;
+    margin: 1% 0;
+    opacity: 0.7;
+}
+
+/* Gallery */
+.gallery {
+    background-color: #0E1317;
+    padding: 0 7.5% 3% 7.5%;
+}
+
+.gtxt {
+    margin: 0 10%;
+    padding-top: 4%;
+    text-align: center;
+}
+
+.gtxt h1 {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 1.5%;
+    font-size: 3vw;
+}
+
+.gimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5% 5.6% 0.5%;
+    cursor: pointer;
+}
+
+.gimg img {
+    width: 100%;
+}
+
+.gimg1 {
+    width: 30%;
+    margin: 0 2%;
+}
+
+.gimg2 {
+    margin-bottom: 3.7%;
+}
+
+.gimgcenter {
+    width: 32%;
+}
+
+
+/* Blog */
+.blogs {
+    padding: 0 10%;
+}
+
+.ctxt {
+    text-align: center;
+}
+
+.ctxt h1 {
+    color: #C09863;
+    font-weight: bold;
+    margin-bottom: 1.5%;
+    font-size: 3vw;
+}
+
+.bimgbox {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: 2.5% 2.6% 5% 2.6%;
+}
+
+.bbox1 {
+    width: 30%;
+    margin: 0 1.5%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 6px 6px 20px #aaaaaa;
+    transition: 0.5s;
+}
+
+.bbox1:hover {
+    opacity: 0.85;
+    transform: scale(1.05);
+}
+
+.bimg img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.btxt {
+    padding: 0 4.5%;
+}
+
+.btxt h4 {
+    font-size: 0.85vw;
+    margin: 5% 0 2% 0;
+    color: #C09863;
+}
+
+.btxt h2 {
+    font-weight: bold;
+    font-size: 1.25vw;
+}
+
+.btxt p {
+    font-size: 1vw;
+}
+
+/* Banner */
+.banner2 {
+    background-image: url("../images/hspecialbg.jpg");
+    padding: 2% 5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.banner2 p {
+    color: #C09863;
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+.banner2 h1 {
+    font-size: 3.25vw;
+    font-weight: bold;
+}
+
+/* Footer */
+.tyfooter {
+    display: flex;
+    background-color: #0E1317;
+    padding: 2% 5%;
+}
+
+.tyflogo {
+    width: 15%;
+    margin-right: 10%;
+}
+
+.ftitle {
+    color: white;
+    font-size: 1.7vw;
+    font-weight: bold;
+    margin-bottom: 3%;
+    padding-top: 3%;
+}
+
+.whours {
+    width: 30%;
+}
+
+.whours h3 {
+    color: white;
+    font-weight: bold;
+    font-size: 1.1vw;
+    margin: 2% 0 0.5% 0;
+}
+
+.whours p {
+    color: #C09863;
+    font-size: 1.1vw;
+    margin: 0.5% 0 2% 0;
+}
+
+.whours h4 {
+    color: #EF6D58;
+    font-weight: bold;
+    font-size: 1.1vw;
+}
+
+.fcontent {
+    flex-direction: column;
+    width: 30%;
+}
+
+.fcontent a {
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.fcontent a:hover {
+    opacity: 0.8;
+}
+
+.fc {
+    color: #ffffff;
+}
+
+.fc p {
+    color: #C09863;
+    font-size: 1.1vw;
+    font-weight: bold;
+}
+
+.social-icons {
+    width: 15%;
+
+}
+
+.social-icons .social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #C09863;
+    color: #fff;
+    border-radius: 100%;
+    margin-top: 1%;
+    margin-right: 0.5rem;
+    text-decoration: none;
+    transition: 0.3s;
+
+}
+
+.social-icons .social-icon:hover {
+    transform: scale(1.2);
+}
+
+@media screen and (min-width:450px) and (max-width:834px) {
+
+    /* Navigation Bar */
+    #logo1 {
+        width: 20%;
+    }
+
+    .bookbtn {
+        display: none;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        font-size: 1.75vw;
+    }
+
+    .dropdown .dropdown-item {
+        font-size: 1.75vw;
+    }
+
+    /* Contents */
+    .hbtn {
+        width: 16%;
+        padding: 1.45% 0 1% 0;
+        border-radius: 8px;
+        font-size: 1.5vw;
+        font-weight: bold;
+        margin: 5% 0 0;
+    }
+
+    /* About Us */
+    .abt {
+        margin: 5% 10%;
+        flex-direction: column-reverse;
+    }
+
+    #abtimg {
+        width: 80%;
+        margin: 0 10%;
+    }
+
+    #abtcon {
+        width: 100%;
+    }
+
+    #abtcon h1 {
+        font-size: 3.5vw;
+    }
+
+    #abtcon p {
+        font-size: 2.5vw;
+        margin-bottom: 15%;
+        font-weight: unset;
+    }
+
+    .rbtn1 {
+        font-size: 1.5vw;
+
+    }
+
+    /* Special */
+    .hspecial p {
+        font-size: 2vw;
+    }
+
+    .specialbtn {
+        width: 16.8%;
+        font-size: 1.5vw;
+        padding: 1.45% 0 1% 0;
+    }
+
+    /* Our Menu */
+    .ourmenu {
+        display: none;
+    }
+
+    /* Our Menu Tablet and Mobile*/
+    .ourmenu2 {
+        display: block;
+        margin: 5% 10%;
+    }
+
+    .ourmenu2 h1 {
+        color: #C09863;
+        font-weight: bold;
+        font-size: 3.5vw;
+    }
+
+    .imgcontainer {
+        flex-direction: column;
+    }
+
+    .imgbox {
+        position: relative;
+        width: 100%;
+        margin: 2.5% 0;
+    }
+
+    .txtmiddle {
+        opacity: 0.65;
+    }
+
+    .menutxt {
+        color: white;
+        font-size: 3.5vw;
+        font-weight: bold;
+    }
+
+    /* Our Services */
+    .services {
+        background-color: #0E1317;
+        padding: 0 7.5%;
+    }
+
+    .stxt h1 {
+        font-size: 3.5vw;
+    }
+
+    .stxt p {
+        font-size: 2vw;
+    }
+
+    .simgbox {
+        flex-wrap: wrap;
+
+    }
+
+    .simg {
+        width: 45%;
+    }
+
+    .simg h2 {
+        font-size: 2vw;
+    }
+
+    .sbtn {
+        width: 19.6%;
+        padding: 1.6% 0 1.25% 0;
+        font-size: 1.5vw;
+    }
+
+    /* Our Chef */
+    .ourchef {
+        margin: 5% 7%;
+        padding: 0%;
+    }
+
+    .ctxt {
+        padding-top: 0;
+
+    }
+
+    .ctxt h1 {
+        font-size: 3.5vw;
+    }
+
+    .ctxt p {
+        font-size: 2vw;
+    }
+
+    .cimgbox {
+        flex-wrap: wrap;
+    }
+
+    .cimg {
+        width: 45%;
+    }
+
+    .cimg h2 {
+        font-size: 2vw;
+    }
+
+    .cimg p {
+        font-size: 1.75vw;
+    }
+
+    /* Gallery */
+    .gtxt h1 {
+        font-size: 3.5vw;
+    }
+
+    .gimg {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2.5% 5.6% 0.5%;
+    }
+
+    .gimg1 {
+        width: 80%;
+        margin: 2%;
+    }
+
+    .gimgcenter {
+        width: 80%;
+        margin: 2%;
+    }
+
+    /* Blog */
+    .ctxt h1 {
+        margin-top: 4%;
+        font-size: 3.5vw;
+    }
+
+    .bimgbox {
+        flex-wrap: wrap;
+        margin: 2.5% 2.6% 5% 2.6%;
+    }
+
+    .bbox1 {
+        width: 47%;
+        margin: 1.5%;
+    }
+
+    .btxt h4 {
+        font-size: 1.25vw;
+    }
+
+    .btxt h2 {
+        font-weight: bold;
+        font-size: 2vw;
+    }
+
+    .btxt p {
+        font-size: 1.5vw;
+    }
+
+    /* Banner */
+    .banner2 h1 {
+        font-size: 4.75vw;
+    }
+
+    .banner2 p {
+        font-size: 2vw;
+    }
+
+    /* Footer */
+    .tyfooter {
+        flex-wrap: wrap;
+    }
+
+    .tyflogo {
+        width: 30%;
+    }
+
+    .whours {
+        width: 50%;
+        margin-left: 10%;
+    }
+
+    .ftitle {
+        font-size: 3.5vw;
+    }
+
+    .whours h3 {
+        font-size: 2.2vw;
+    }
+
+    .whours p {
+        font-size: 2.2vw;
+    }
+
+    .whours h4 {
+        font-size: 2.2vw;
+    }
+
+    .fcontent {
+        width: 50%;
+        padding-left: 1%;
+    }
+
+    .fcontent a {
+        font-size: 2.2vw;
+    }
+
+    .fc p {
+        font-size: 2.2vw;
+    }
+
+    .social-icons {
+        width: 50%;
+        padding-top: 3%;
+    }
+
+    .social-icons .social-icon {
+        width: 15%;
+        height: 20%;
+    }
+}
+
+@media screen and (max-width:450px) {
+
+    /* Navigation bar */
+    #logo1 {
+        width: 40%;
+    }
+
+    .bookbtn {
+        display: none;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        font-size: 4vw;
+    }
+
+    .dropdown .dropdown-item {
+        font-size: 4vw;
+    }
+
+    /* Content */
+    .bg1 {
+        height: 45vh;
+        padding: 25% 10%;
+    }
+
+    .bg2 {
+        height: 45vh;
+        padding: 25% 10%;
+    }
+
+    .bg3 {
+        height: 45vh;
+        padding: 25% 10%;
+    }
+
+    .bgcon h2 {
+        font-size: 4vw;
+    }
+
+    .bgcon h1 {
+        font-size: 6vw;
+    }
+
+    .hbtn {
+        width: 32%;
+        font-size: 3vw;
+        padding: 3% 0 1.75% 0;
+    }
+
+    /* About Us */
+    .abt {
+        margin: 5% 8%;
+        flex-direction: column-reverse;
+    }
+
+    #abtimg {
+        width: 100%;
+        margin: 0;
+    }
+
+    #abtcon {
+        width: 100%;
+    }
+
+    #abtcon h1 {
+        font-size: 6vw;
+    }
+
+    #abtcon p {
+        font-size: 4vw;
+        margin-bottom: 20%;
+        font-weight: unset;
+    }
+
+    .rbtn1 {
+        width: 32%;
+        font-size: 3vw;
+        padding: 3% 0 1.75% 0;
+
+    }
+
+    /* Special */
+    .hspecial h1 {
+        font-size: 6vw;
+    }
+
+    .hspecial p {
+        font-size: 4vw;
+    }
+
+    .specialbtn {
+        width: 32%;
+        font-size: 3vw;
+        padding: 3% 0 1.75% 0;
+    }
+
+    /* Our Menu */
+    .ourmenu {
+        display: none;
+    }
+
+    /* Our Menu Tablet and Mobile*/
+    .ourmenu2 {
+        display: block;
+        margin: 5% 8%;
+    }
+
+    .ourmenu2 h1 {
+        color: #C09863;
+        font-weight: bold;
+        font-size: 6vw;
+    }
+
+    .imgcontainer {
+        flex-direction: column;
+    }
+
+    .imgbox {
+        position: relative;
+        width: 100%;
+        margin: 2.5% 0;
+    }
+
+    .txtmiddle {
+        opacity: 0.65;
+    }
+
+    .menutxt {
+        color: white;
+        font-size: 4vw;
+        font-weight: bold;
+    }
+
+    /* Our Services */
+    .services {
+        background-color: #0E1317;
+        padding: 0 8%;
+    }
+
+    .stxt h1 {
+        font-size: 6vw;
+    }
+
+    .stxt p {
+        font-size: 4vw;
+    }
+
+    .simgbox {
+        flex-direction: column;
+    }
+
+    .simg {
+        width: 100%;
+        margin: 2.5% 0;
+    }
+
+    .simg h2 {
+        font-size: 4vw;
+    }
+
+    .sbtn {
+        width: 35%;
+        font-size: 3vw;
+        padding: 3% 0 1.75% 0;
+    }
+
+    /* Our Chef */
+    .ourchef {
+        margin: 5% 8%;
+        padding: 0%;
+    }
+
+    .ctxt {
+        padding-top: 0;
+
+    }
+
+    .ctxt h1 {
+        font-size: 6vw;
+    }
+
+    .ctxt p {
+        font-size: 4vw;
+    }
+
+    .cimgbox {
+        flex-direction: column;
+    }
+
+    .cimg {
+        width: 100%;
+        margin: 2.5% 0;
+    }
+
+    .cimg h2 {
+        font-size: 6vw;
+    }
+
+    .cimg p {
+        font-size: 4vw;
+    }
+
+    /* Gallery */
+    .gtxt h1 {
+        font-size: 6vw;
+    }
+
+    .gimg {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2.5% 0 0.5%;
+    }
+
+    .gimg1 {
+        width: 100%;
+        margin: 2% 0;
+    }
+
+    .gimgcenter {
+        width: 100%;
+        margin: 2% 0;
+    }
+
+    /* Blog */
+    .ctxt h1 {
+        margin-top: 4%;
+        font-size: 6vw;
+    }
+
+    .bimgbox {
+        flex-direction: column;
+        margin: 2.5% 0 5%;
+    }
+
+    .bbox1 {
+        width: 100%;
+        margin: 4% 0;
+    }
+
+    .btxt h4 {
+        font-size: 3vw;
+    }
+
+    .btxt h2 {
+        font-weight: bold;
+        font-size: 4vw;
+    }
+
+    .btxt p {
+        font-size: 4vw;
+    }
+
+    /* Banner */
+    .banner2 {
+        text-align: center;
+    }
+
+    .banner2 h1 {
+        font-size: 6vw;
+    }
+
+    .banner2 p {
+        font-size: 4vw;
+    }
+
+    /* Footer */
+    .tyfooter {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .tyflogo {
+        width: 70%;
+        margin: 5% 0;
+    }
+
+    .whours {
+        width: 80%;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+
+    .ftitle {
+        font-size: 6vw;
+    }
+
+    .whours h3 {
+        font-size: 4.5vw;
+    }
+
+    .whours p {
+        font-size: 4.5vw;
+    }
+
+    .whours h4 {
+        font-size: 4.5vw;
+    }
+
+    .fcontent {
+        width: 80%;
+        text-align: center;
+    }
+
+    .fcontent a {
+        font-size: 3.8vw;
+    }
+
+    .fc p {
+        font-size: 4.5vw;
+    }
+
+    .social-icons {
+        width: 80%;
+        justify-content: center;
+    }
+
+    .social-icons .social-icon {
+        height: 55px;
+        width: 55px;
+        justify-content: center;
+
+    }
+}

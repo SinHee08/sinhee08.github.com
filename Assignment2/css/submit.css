@@ -1,0 +1,108 @@
+#container {
+    background-color: #F9F5EC;
+    max-width: 1920px;
+    margin: auto;
+    font-family: 'Epilogue', sans-serif;
+    text-align: center;
+    padding: 8%;
+    height: 100vh;
+    align-items: center;
+}
+
+button {
+    border: none;
+    color: white;
+    background-color: #C09863;
+    background-image: linear-gradient(to right, transparent 50%, white 50%);
+    background-size: 210%;
+    background-position: 0%;
+    transition: ease-out 0.5s;
+    align-items: center;
+    text-align: center;
+}
+
+#container img {
+    width: 200px;
+    margin-bottom: 1%;
+}
+
+#container h1 {
+    font-size: 70px;
+    margin-bottom: 2%;
+}
+
+#container p {
+    font-size: 30px;
+}
+
+.specialbtn {
+    width: 190px;
+    padding: 1.1% 0 0.75% 0;
+    margin-top: 2%;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.specialbtn:hover {
+    color: #C09863;
+    background-position: 100%;
+    border: #C09863 1px solid;
+}
+
+@media screen and (min-width:450px) and (max-width:834px) {
+    #container{
+        padding: 20% 8%;
+    }
+    #container img {
+        width: 150px;
+        margin-bottom: 3%;
+    }
+
+    #container h1 {
+        font-size: 50px;
+        margin-bottom: 5%;
+    }
+
+    #container p {
+        font-size: 20px;
+    }
+
+    .specialbtn {
+        width: 160px;
+        font-size: 17px;
+        padding: 1.45% 0 1% 0;
+        margin-top: 5%;
+    }
+
+
+}
+
+@media screen and (max-width:450px) {
+
+    #container{
+        padding: 20% 8%;
+    }
+    #container img {
+        width: 120px;
+        margin-bottom: 3%;
+    }
+
+    #container h1 {
+        font-size: 40px;
+        margin-bottom: 5%;
+    }
+
+    #container p {
+        font-size: 18px;
+    }
+
+    .specialbtn {
+        width: 120px;
+        font-size: 14px;
+        padding: 3% 0 2% 0;
+        margin-top: 5%;
+    }
+
+
+}

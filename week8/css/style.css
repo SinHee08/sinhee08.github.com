@@ -1,0 +1,93 @@
+body {
+    color: #7bb591;
+    max-width: 600px;
+    margin: auto;
+}
+
+fieldset {
+    background-color: #ddf3ee;
+    padding: 20px;
+}
+
+legend {
+    color: #598867;
+    font-size: 2em;
+}
+
+input[type=text] {
+    padding: 8px 10px;
+}
+
+.cp{
+    display: flex;
+    justify-content: space-between;
+}
+
+#email{
+    width: 50%;
+}
+
+input[type=email] {
+    width: 90%;
+    height: 30px;
+    padding: 8px 10px;
+    background-color: #edf9f7;
+}
+
+#tel{
+    width: 50%;
+}
+
+input[type=tel] {
+    width: 90%;
+    height: 30px;
+    padding: 8px 10px;
+    background-color: #edf9f7;
+}
+
+label{
+    margin: 0px 20px 0px 5px;
+}
+.name {
+    width: 45%;
+    height: 30px;
+    margin-bottom: 20px;
+    background-color: #edf9f7;
+}
+
+.address {
+    width: 95%;
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: #edf9f7;
+}
+
+.box {
+    width: 45%;
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: #edf9f7;
+}
+
+#country {
+    margin-bottom: 10px;
+    background-color: #edf9f7;
+}
+
+select {
+    width: 49.5%;
+    height: 50px;
+}
+
+input[type=submit] {
+    padding: 8px 25px;
+    color: #ffffff;
+    border: solid 1px transparent;
+    border-radius: 25px;
+    background-color: #23622b;
+}
+
+#btncenter {
+    display: flex;
+    justify-content: center;
+}
