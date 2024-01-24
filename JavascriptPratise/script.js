@@ -172,23 +172,163 @@ false
 
 // person.print_name();
 
-var movie = {
-    title:"Spider-Man 2",
-    maker:"Sony Pictures Releasing",
-    duration:127,
-    actors:[
-        {
-            name:"Tobey Maguire",
-            age:48,
-            is_male:true        
-        },
-        {
-            name:"Kirsten Dunst",
-            age:41,
-            is_male:false        
-        }
-    ]
-};
+// var movie = {
+//     title:"Spider-Man 2",
+//     maker:"Sony Pictures Releasing",
+//     duration:127,
+//     actors:[
+//         {
+//             name:"Tobey Maguire",
+//             age:48,
+//             is_male:true        
+//         },
+//         {
+//             name:"Kirsten Dunst",
+//             age:41,
+//             is_male:false        
+//         }
+//     ]
+// };
 
-document.write(movie.actors[0].name);
-document.write(movie.actors[1].name);
+// document.write(movie.actors[0].name);
+// document.write(movie.actors[1].name);
+
+/*==================== while 回圈 ======================*/
+// var i = 1;
+
+// // 先判断 后执行
+// while (i <= 6){
+//     document.write(i);
+//     document.write("<br/>");
+//     i++;
+// }
+
+// // 先执行 后判断
+// do{
+//     document.write(i);
+//     document.write("<br/>");
+//     i++;
+// }while (i <= 3)
+
+/*==================== while 回圈 (密码检验程式) ======================*/
+// var password = 123456;
+// var input;
+// var entry_count = 1;
+// var entry_limit = 3;
+// var out_of_limit = false;
+// while (password!=input && !out_of_limit){
+//     if (entry_count <= entry_limit){
+//         input = prompt ("pls insert your password");
+//         entry_count ++;
+//     }
+//     else{
+//         out_of_limit = true;
+//     }
+// }
+
+// if (out_of_limit){
+//     alert("log in unsucessfully");
+// }
+// else {
+//     alert("log in sucessfully");
+// }
+
+/*==================== for 回圈 ======================*/
+// for(var i = 0 ; i <=10 ; i ++){
+//     document.write(i);
+//     document.write("<br/>");
+// }
+
+// friends = ["dickson","alson","wilson"];
+// for (var i = 0; i<friends.length; i++){
+//     document.write(friends[i]);
+//     document.write("<br/>");
+// }
+
+/*==================== for 回圈 (问答程式)======================*/
+// var questions = [
+//     {
+//         prompt:"香蕉是什么颜色？\n(a)红色\n(b)绿色\n(c)黄色",
+//         answer: "c"
+//     },
+//     {
+//         prompt:"草莓是什么颜色？\n(a)红色\n(b)绿色\n(c)黄色",
+//         answer: "a"
+//     },
+//     {
+//         prompt:"1公尺等于多少公分？\n(a)1\n(b)10\n(c)100",
+//         answer: "c"
+//     }
+// ]
+//  var score = 0;
+//  for(var i=0; i<questions.length; i++){
+//      var input = prompt((questions[i].prompt));
+//      if(input == questions[i].answer){
+//         alert("correct");
+//         score ++;
+//      }
+//      else{
+//         alert("wrong! answer is " + questions[i].answer);
+//      }
+//  }
+
+//  alert("Total correct " + score );
+
+/*==================== 2维阵列 ，巢状回圈======================*/
+
+// var number = [
+//     [1,2,3],
+//     [4,5,6],
+//     [7,8,9],
+//     [0]
+// ];
+
+// for(var i=0; i<number.length; i++){
+//     for(var j=0; j<number[i].length; j++){
+//         document.write(number[i][j]);
+//     }
+//     document.write("<br/>");
+// }
+
+/*==================== class ======================*/
+
+class Phone {
+    constructor(number, year, is_waterproof){
+        this.number = number;
+        this.year = year;
+        this.is_waterproof = is_waterproof
+    }
+    phone_age(){
+        return 2024 - this.year;
+    }
+}
+
+var phone1 = new Phone("123",2018,false);
+var phone2 = new Phone("456",2022,false);
+var phone3 = new Phone("789",2020,true);
+document.write(phone2.is_waterproof);
+
+// var phone1 = {
+//     number:"123",
+//     year:2020,
+//     is_waterproof:false,
+//     phone_age:function(){
+//         return 2024 - this.year;
+//     }
+// }
+// var phone2 = {
+//     number:"456",
+//     year:2018,
+//     is_waterproof:false,
+//     phone_age:function(){
+//         return 2024 - this.year;
+//     }
+// }
+// var phone3 = {
+//     number:"789",
+//     year:2022,
+//     is_waterproof:true,
+//     phone_age:function(){
+//         return 2024 - this.year;
+//     }
+// }
