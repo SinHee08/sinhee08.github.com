@@ -16,7 +16,7 @@ false
 // var my_name = "isaac";
 // var my_age = 24;
 // var is_male = true;
- 
+
 // document.write("有一个人叫 " + my_name);
 // document.write("<br/>");
 // document.write(my_name + " is " + my_age);
@@ -292,21 +292,21 @@ false
 
 /*==================== class ======================*/
 
-class Phone {
-    constructor(number, year, is_waterproof){
-        this.number = number;
-        this.year = year;
-        this.is_waterproof = is_waterproof
-    }
-    phone_age(){
-        return 2024 - this.year;
-    }
-}
+// class Phone {
+//     constructor(number, year, is_waterproof){
+//         this.number = number;
+//         this.year = year;
+//         this.is_waterproof = is_waterproof
+//     }
+//     phone_age(){
+//         return 2024 - this.year;
+//     }
+// }
 
-var phone1 = new Phone("123",2018,false);
-var phone2 = new Phone("456",2022,false);
-var phone3 = new Phone("789",2020,true);
-document.write(phone2.is_waterproof);
+// var phone1 = new Phone("123",2018,false);
+// var phone2 = new Phone("456",2022,false);
+// var phone3 = new Phone("789",2020,true);
+// document.write(phone2.is_waterproof);
 
 // var phone1 = {
 //     number:"123",
@@ -332,3 +332,49 @@ document.write(phone2.is_waterproof);
 //         return 2024 - this.year;
 //     }
 // }
+
+/*==================== 如何取得html元素 ======================*/
+// var h1 = document.getElementById("header");
+// h1.innerText = "若有其事";
+// h1.style.backgroundColor = "red";
+// h1.style.color = "blue";
+// var link = document.getElementById("link");
+// console.log(link);
+// link.href = "https://amazon.com";
+
+/*==================== event listener ======================*/
+// var h1 = document.getElementById("header");
+// h1.addEventListener("mouseover",function(){
+//     this.innerText = "若有其事";
+//     this.style.color = "red";
+// })
+
+// h1.addEventListener("mouseout",function(){
+//     this.innerText = "若无其事";
+//     this.style.color = "blue";
+// })
+
+// var btn = document.getElementById("btn");
+// btn.addEventListener("click",function(){
+//     alert("你知道吗？爱你这件事 真的很累")
+//     this.innerText = "我真的很累";
+//     this.style.color = "red";
+// })
+
+/*==================== 部落格 ======================*/
+var title = document.getElementById("title");
+var content = document.getElementById("content");
+var btn = document.getElementById("btn");
+var list = document.getElementById("list");
+
+btn.addEventListener("click", function () {
+    list.innerHTML = list.innerHTML + `
+    <div class="article">
+    <h2>${title.value}</h2>
+    <p>${content.value}</p>
+    </div >
+    ` ;
+    title.value = "";
+    content.value = "";
+
+})
