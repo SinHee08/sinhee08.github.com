@@ -26,25 +26,26 @@
     </head>
     <body>
         <button onclick="
-            console.log(totalPrice);
+            console.log(`目前购物车总额 :  ${totalPrice}`);
         ">購物車總額</button>
-        <button onlick="
+        <button onclick="
             totalPrice = 0;
-            console.log(totalPrice);
+            console.log('已清空购物车');
+            console.log(`目前购物车总额 :  ${totalPrice}`);
         ">清空購物車</button>
 
         <img src="images/product_image1.jpg">
         <p>$100</p>
-        <button onclick="
+        <button onclick=" 
             totalPrice = totalPrice + 100;
-            console.log(totalPrice);
+            console.log(`目前购物车总额 :  ${totalPrice}`);
         ">加入購物車</button>
 
         <img src="images/product_image2.jpg">
         <p>$200</p>
         <button onclick="
             totalPrice = totalPrice + 200;
-            console.log(totalPrice);
+            console.log(`目前购物车总额 :  ${totalPrice}`);
         ">加入購物車</button>
         
 
