@@ -24,8 +24,8 @@
     <script>
         function playGame(userChoice) {
             const choices = ['剪刀', '石頭', '布'];
-            const randomIndex = Math.floor(Math.random() * 3);
-            const computerChoice = choices[randomIndex];
+            const randomIndex = Math.floor(Math.random() * 3);/*这是将random的0-3里面的号码取整数变成0,1,2*/
+            const computerChoice = choices[randomIndex];/*通过将上述整数 randomIndex 用作数组 choices 的索引，我们从数组中获取了一个元素，即计算机的选择。*/
 
             if (userChoice === computerChoice) {
                 alert(`你出${userChoice} 電腦出${computerChoice}，此局平手!`);

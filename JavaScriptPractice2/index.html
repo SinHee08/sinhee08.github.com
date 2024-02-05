@@ -1,57 +1,165 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <title>測驗</title>
-    </html>
 
-        <style>
-            button{
-                font-size:25px;
-                margin-right:10px;
-            }
-            p{
-                font-size: 25px;
-                display: inline-block;
-                margin-right:10px;
-            }
-            img{
-                height: 200px;
-                display: block;
-                margin-top:50px;
-            }
-        </style>
-    </head>
-    <body>
-        <button onclick="
-            console.log(`目前购物车总额 :  ${totalPrice}`);
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>測驗</title>
+
+</html>
+
+<style>
+    button {
+        font-size: 25px;
+        margin-right: 10px;
+    }
+
+    p {
+        font-size: 25px;
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    img {
+        height: 200px;
+        display: block;
+        margin-top: 50px;
+    }
+</style>
+</head>
+
+<body>
+    <button onclick="
+            showCart();
         ">購物車總額</button>
-        <button onclick="
-            totalPrice = 0;
+    <button onclick="
+            cart.productNum = 0;
+            cart.product1.num = 0;
+            cart.product2.num = 0;
+            cart.totalPrice = 0;
             console.log('已清空购物车');
-            console.log(`目前购物车总额 :  ${totalPrice}`);
+            localStorage.removeItem('cart');
+            showCart();
         ">清空購物車</button>
 
-        <img src="images/product_image1.jpg">
-        <p>$100</p>
-        <button onclick=" 
-            totalPrice += 100;
-            console.log(`目前购物车总额 :  ${totalPrice}`);
+    <img src="images/product_image1.jpg">
+    <p>$100</p>
+    <button onclick=" 
+            cart.productNum ++;
+            cart.product1.num ++;
+            cart.totalPrice += 100;
+            saveCart();
+            showCart();
         ">加入購物車</button>
 
-        <img src="images/product_image2.jpg">
-        <p>$200</p>
-        <button onclick="
-            totalPrice += 200;
-            console.log(`目前购物车总额 :  ${totalPrice}`);
+    <img src="images/product_image2.jpg">
+    <p>$200</p>
+    <button onclick="
+            cart.productNum ++;
+            cart.product2.num ++;
+            cart.totalPrice += 200;
+            saveCart();
+            showCart();
         ">加入購物車</button>
-        
 
-        <script>
-            let totalPrice = 0;
 
-        </script>
-    </body>
+    <script>
+        let cart = JSON.parse(localStorage.getItem("cart"));
+        if (!cart) {
+            cart =
+            {
+                productNum: 0,
+                product1: {
+                    num: 0,
+                    name: "海底捞泡面",
+                    price: 100
+                },
+                product2: {
+                    num: 0,
+                    name: "养气人参",
+                    price: 200
+                },
+                totalPrice: 0,
+            };
+        }
+        function showCart() {
+            console.log(`目前商品数 :  ${cart.productNum}`);
+            console.log(`${cart.product1.name} :  ${cart.product1.num}`);
+            console.log(`${cart.product2.name} :  ${cart.product2.num}`);
+            console.log(`目前购物车总额 :  ${cart.totalPrice}`);
+        }
+
+        function saveCart() {
+            const jsonCart = JSON.stringify(cart);
+            localStorage.setItem("cart", jsonCart);
+        };
+
+        // function
+        // function calculateDiscount(price,discount){
+        //     var discountPrice = price*discount;
+        //     return discountPrice;
+        // }
+        // var price = 5000;
+        // var discount = 0.8;
+        // console.log(price,discount);
+
+        // object
+        // var product = {
+        //     name: "海底捞泡面",
+        //     price: 100
+        // };
+
+        // console.log(product.price);
+        // product.price = 200;
+        // console.log(product.price);
+
+        // product.expiredDate = "2025/06/06";
+        // console.log(product);
+
+        // delete product.price;
+        // console.log(product);
+
+        // localStorage JSON
+        // const jsonCart = JSON.stringify(cart);
+        // localStorage.setItem("cart",jsonCart);
+        // let cart1 = localStorage.getItem("cart");
+        // cart1 = JSON.parse(cart1);
+        // console.log(cart1);
+
+        // const jsonCart = JSON.stringify(cart);
+        // console.log(typeof jsonCart);
+        // console.log(JSON.parse(jsonCart));
+
+        // localStorage.setItem("price",1000);
+        // const price = localStorage.getItem("price");
+        // console.log(typeof price);
+        // localStorage.setItem("cart",cart);
+        // const cart1 = localStorage.getItem("cart");
+        // console.log(typeof cart1);
+        // localStorage.setItem("price",2000);
+        // localStorage.removeItem("price");
+        // const price = localStorage.getItem("price");
+        // console.log("price");
+
+        // falsy & truthy value
+        // false,"",0,NaN,undefined,null
+
+        // console.log(0/0);
+        // if(0){
+        //     console.log("你好")；
+        // }
+
+        // 物件补充
+        const c = {
+            name: "小白",
+            age:25
+        };
+
+        const {name,age} = c;
+
+        console.log(name,age);
+    </script>
+</body>
+
 </html>
