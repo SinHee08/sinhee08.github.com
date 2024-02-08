@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>querySelector 方法</title>
+</head>
+
+<body>
+    <button>订阅</button>
+    <p>小包</p>
+    <p class="js-p">小包</p>
+    <p id="js-p">小包</p>
+
+    <script>
+        // const buttonElement = document.querySelector("button");
+        // buttonElement.innerHTML = "哈哈";
+        // console.log(buttonElement);
+
+        // const pElement =
+        // document.querySelector("p");
+        // buttonElement.innerHTML = "小白";
+        // console.log(pElement);
+
+        // const pElement =
+        // document.querySelector(".js-p");
+        // buttonElement.innerHTML = "小白";
+        // console.log(pElement);
+
+        // const pElement =
+        // document.querySelector("#js-p");
+        // buttonElement.innerHTML = "小白";
+        // console.log(pElement);
+
+        var btn = document.querySelector("button");
+        btn.addEventListener("click", function () {
+
+            if (this.innerHTML === "订阅") {
+                this.innerText = "已订阅";
+                this.style.color = "red";
+            } else {
+                this.innerText = "订阅";
+                this.style.color = "black";
+            }
+        })
+
+
+    </script>
+</body>
+
+</html>

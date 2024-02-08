@@ -31,16 +31,13 @@
 
 <body>
     <button onclick="
-            showCart();
-        ">購物車總額</button>
-    <button onclick="
             cart.productNum = 0;
             cart.product1.num = 0;
             cart.product2.num = 0;
             cart.totalPrice = 0;
             console.log('已清空购物车');
             localStorage.removeItem('cart');
-            showCart();
+            updateCart();
         ">清空購物車</button>
 
     <img src="images/product_image1.jpg">
@@ -50,7 +47,7 @@
             cart.product1.num ++;
             cart.totalPrice += 100;
             saveCart();
-            showCart();
+            updateCart();
         ">加入購物車</button>
 
     <img src="images/product_image2.jpg">
@@ -60,10 +57,15 @@
             cart.product2.num ++;
             cart.totalPrice += 200;
             saveCart();
-            showCart();
+            updateCart();
         ">加入購物車</button>
 
 
+        <p class="cart">
+
+        </p>
+
+        
     <script>
         let cart = JSON.parse(localStorage.getItem("cart"));
         if (!cart) {
@@ -83,17 +85,28 @@
                 totalPrice: 0,
             };
         }
-        function showCart() {
-            console.log(`目前商品数 :  ${cart.productNum}`);
-            console.log(`${cart.product1.name} :  ${cart.product1.num}`);
-            console.log(`${cart.product2.name} :  ${cart.product2.num}`);
-            console.log(`目前购物车总额 :  ${cart.totalPrice}`);
+
+        updateCart()
+
+        function updateCart() {
+            document.querySelector(".cart").innerHTML = `
+        目前商品数 :  ${cart.productNum} <br>
+        ${cart.product1.name} :  ${cart.product1.num} <br>
+        ${cart.product2.name} :  ${cart.product2.num} <br>
+        目前购物车总额 :  ${cart.totalPrice}
+    `;
         }
+
 
         function saveCart() {
             const jsonCart = JSON.stringify(cart);
             localStorage.setItem("cart", jsonCart);
         };
+
+        const pElement =
+            document.querySelector(".cart");
+        buttonElement.innerHTML = showCart;
+        console.log(pElement);
 
         // function
         // function calculateDiscount(price,discount){
@@ -165,7 +178,7 @@
 
         // DOM - DocumentObjectModel
         // document.body.innerHTML="信息好帅";
-        console.log(document.body);
+        // console.log(document.body);
     </script>
 </body>
 
