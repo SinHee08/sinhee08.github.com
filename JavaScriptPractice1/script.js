@@ -48,6 +48,9 @@ false
 // var score3 = 20;
 // var score4 = 30;
 // var score5 = 50;
+
+// scores.push(38); /*在后面加资料*/
+// scores.splice(0,1); /*删除第一个资料*/
 // document.write(scores[0]);
 // document.write(friends[0]);
 // document.write(friends.length);
