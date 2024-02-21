@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>測驗</title>
+    <style>
+        .input-name,
+        .input-price {
+            width: 100px;
+        }
+
+        .product-grid {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: 112px 112px 50px;
+            row-gap: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <input class="input-name" placeholder="输入商品名称">
+    <input class="input-price" placeholder="输入商品价格">
+    <button onclick="addProduct();">新增</button>
+    <div class="product-grid">
+
+    </div>
+
+    <script>
+        let products = [];
+        function rederProducts(){
+            let html = "";
+            
+            for (let i = 0; i < products.length; i++) {
+                html += `<div> ${products[i].name} </div>
+               <div> ${products[i].price} </div>
+               <button onclick="removeProduct(${i});"> 删除 </button>`;
+            }
+            
+            document.querySelector('.product-grid').innerHTML = html;
+        }
+        
+        function addProduct() {
+            const inputName = document.querySelector('.input-name');/*取得文字*/
+            const inputPrice = document.querySelector('.input-price');/*取得价格*/
+            products.push({
+                name: inputName.value,
+                price: inputPrice.value
+            });/*把资料存入整列*/
+            inputName.value = "";/*清空格子*/
+            inputPrice.value = "";/*清空格子*/
+            rederProducts();
+        }
+
+        function removeProduct(i) {
+            products.splice(i, 1);
+            rederProducts();
+            
+        }
+    </script>
+</body>
+
+</html>
