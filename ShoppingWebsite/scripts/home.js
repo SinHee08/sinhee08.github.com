@@ -22,24 +22,38 @@ const products = [
     }
 ]
 
-function addToCart() {
-    // 获取 cart-num 元素
-    var cartNumElement = document.querySelector('.cart-num');
+function addToCart(event, index) {
+    // 阻止默认行为，即阻止跳转到product.html
+    event.preventDefault();
 
-    // 获取当前的购物车数量
-    var currentCartNum = parseInt(cartNumElement.textContent);
+    var cartNumElement = document.querySelector('.cart-num'); // 获取 cart-num 元素
+    var currentCartNum = parseInt(cartNumElement.textContent); // 获取当前的购物车数量
+    currentCartNum++; // 将购物车数量递增
+    cartNumElement.textContent = currentCartNum; // 更新 cart-num 元素的文本内容
 
-    // 将购物车数量递增
-    currentCartNum++;
+    var clickedProduct = products[index]; // 在这里可以通过索引或其他唯一标识符找到被点击的商品
+    console.log("Clicked Product:", clickedProduct); // 在这里可以执行其他加入购物车的逻辑，比如将商品信息添加到购物车数组中
 
-    // 更新 cart-num 元素的文本内容
-    cartNumElement.textContent = currentCartNum;
+    // 查找与点击产品相关的成功元素
+    var productBlock = event.target.closest('.product-block');
+    var successElement = productBlock.querySelector('.add-success');
+
+    successElement.classList.remove('hidden-element');
+    void successElement.offsetWidth;
+    successElement.classList.add('visible-element');
+
+    setTimeout(function() {
+        successElement.classList.add('hidden-element');
+        void successElement.offsetWidth;
+        successElement.classList.remove('visible-element');
+    }, 2000);
 }
+
 
 let html = "";
 
-for (i = 0; i < products.length; i++) {
-    html+= `<div class="product-block">
+for (let i = 0; i < products.length; i++) {
+    html += `<div class="product-block">
         <a href="product.html">
             <div class="product-image-row">
                 <img class="product-image" src="${products[i].Img}">
@@ -58,13 +72,13 @@ for (i = 0; i < products.length; i++) {
                             <p class="origin-price">${products[i].originPrice}</p>
                         </div>
 
-                        <img class="add-to-cart" src="images/icons/cart.png" onclick="addToCart()">
+                        <!-- 将商品索引传递给addToCart函数 -->
+                        <img class="add-to-cart" src="images/icons/cart.png" onclick="addToCart(event, ${i})">
                     </div>
                 </div>
             </div>
         </a>
-    </div>`
-
+    </div>`;
 }
 
 document.querySelector(".product-grid").innerHTML = html;
