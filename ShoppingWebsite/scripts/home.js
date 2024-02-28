@@ -42,7 +42,7 @@ function addToCart(event, index) {
     void successElement.offsetWidth;
     successElement.classList.add('visible-element');
 
-    setTimeout(function() {
+    setTimeout(function () {
         successElement.classList.add('hidden-element');
         void successElement.offsetWidth;
         successElement.classList.remove('visible-element');
@@ -54,7 +54,7 @@ let html = "";
 
 for (let i = 0; i < products.length; i++) {
     html += `<div class="product-block">
-        <a href="product.html">
+        <a href="product.html?product=${encodeURIComponent(products[i].name)}">
             <div class="product-image-row">
                 <img class="product-image" src="${products[i].Img}">
                     <p class="product-discount">${products[i].discount}折</p>
