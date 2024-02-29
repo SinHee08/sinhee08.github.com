@@ -84,6 +84,9 @@ const products = [
 var urlParams = new URLSearchParams(window.location.search);
 var productName = urlParams.get('product');
 
+//购物车内容
+var shoppingCart = [];
+
 // 根据查询参数的值决定显示哪个商品的信息
 var productIndex = products.findIndex(product => product.name === productName);
 
@@ -101,6 +104,8 @@ var cartQuantity = 0;
 
 // 在这里定义一个变量，表示当前要显示的商品的索引
 var currentProductIndex = productIndex !== -1 ? productIndex : 0;
+
+
 
 // 如果找到匹配的商品，显示该商品的信息
 if (productIndex !== -1) {
@@ -122,11 +127,23 @@ function addToCart() {
     // 获取选择的购买数量
     var selectedQuantity = parseInt(buyNumSelect.value);
 
+    // 获取当前商品信息
+    var clickedProduct = products[currentProductIndex];
+
     // 更新购物车数量
     cartQuantity += selectedQuantity;
 
+    // 添加当前商品到购物车数组
+    shoppingCart.push({
+        product: clickedProduct,
+        quantity: selectedQuantity
+    });
+
     // 更新页面上的购物车数量显示
     updateCartDisplay();
+
+    // 打印购物车内容
+    console.log("Shopping Cart:", shoppingCart);
 
     // 显示加入成功提示
     addSuccessElement.classList.remove('hidden-element');
