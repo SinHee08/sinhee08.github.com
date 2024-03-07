@@ -57,7 +57,7 @@ const products = [
         discount: 4.9,
         originPrice: 100,
         discountPrice: 49,
-        discription:`【平面伯爵茶醫療口罩 台灣製造 雙鋼印 醫療口罩 MIT 成人口罩( 現貨供應)】<br>
+        discription: `【平面伯爵茶醫療口罩 台灣製造 雙鋼印 醫療口罩 MIT 成人口罩( 現貨供應)】<br>
         產品特色：<br>
         - 台灣製造，保證品質，符合醫療口罩標準。<br>
         - 伯爵茶色設計，簡約又不失時尚感。<br>
@@ -80,46 +80,21 @@ const products = [
     }
 ]
 
-// 在 product.html 的 JavaScript 中获取查询参数
-var urlParams = new URLSearchParams(window.location.search);
-var productName = urlParams.get('product');
-
 //购物车内容
 var shoppingCart = [];
 
-// 根据查询参数的值决定显示哪个商品的信息
-var productIndex = products.findIndex(product => product.name === productName);
-
-// 获取加入购物车按钮
-var addToCartButton = document.querySelector('.add-to-cart');
-
-// 获取选择购买数量的 select 元素
-var buyNumSelect = document.querySelector('.buy-num');
-
-// 获取加入成功提示的元素
-var addSuccessElement;
-
-// 初始化购物车数量
-var cartQuantity = 0;
+document.addEventListener('DOMContentLoaded', function () {
+    updateCartNumFromLocalStorage();
+    showProductInfo();
+});
 
 // 在这里定义一个变量，表示当前要显示的商品的索引
-var currentProductIndex = productIndex !== -1 ? productIndex : 0;
-
-
-
-// 如果找到匹配的商品，显示该商品的信息
-if (productIndex !== -1) {
-    showProductInfo(productIndex);
-} else {
-    console.error("无法找到匹配的商品信息");
-}
+var currentProductIndex;
 
 // 加入购物车的功能
 function addToCart() {
     // Ensure that addSuccessElement is initialized before using it
-    if (!addSuccessElement) {
-        addSuccessElement = document.querySelector('.add-success');
-    }
+    var addSuccessElement = document.querySelector('.add-success');
 
     // 获取选择购买数量的 select 元素
     var buyNumSelect = document.querySelector('.buy-num');
@@ -130,20 +105,34 @@ function addToCart() {
     // 获取当前商品信息
     var clickedProduct = products[currentProductIndex];
 
-    // 更新购物车数量
-    cartQuantity += selectedQuantity;
+    // 使用 localStorage 存储购物车信息
+    var cart = JSON.parse(localStorage.getItem('cart')) || { products: [] };
 
-    // 添加当前商品到购物车数组
-    shoppingCart.push({
-        product: clickedProduct,
-        quantity: selectedQuantity
-    });
+    // 确保 cart 对象有一个 products 属性
+    if (!cart.hasOwnProperty('products')) {
+        cart.products = [];
+    }
+
+    // 检查购物车中是否已经存在当前点击的商品
+    var existingProductIndex = cart.products.findIndex(p => p.name === clickedProduct.name);
+
+    if (existingProductIndex !== -1) {
+        // 如果商品已存在，增加其数量
+        cart.products[existingProductIndex].quantity += selectedQuantity;
+    } else {
+        // 如果商品不存在，将其添加到购物车
+        cart.products.push({
+            name: clickedProduct.name,
+            price: clickedProduct.discountPrice,
+            quantity: selectedQuantity
+        });
+    }
+
+    // 存储更新后的购物车信息到 localStorage
+    localStorage.setItem('cart', JSON.stringify(cart));
 
     // 更新页面上的购物车数量显示
     updateCartDisplay();
-
-    // 打印购物车内容
-    console.log("Shopping Cart:", shoppingCart);
 
     // 显示加入成功提示
     addSuccessElement.classList.remove('hidden-element');
@@ -169,22 +158,40 @@ function addToCart() {
 // 更新页面上的购物车数量显示
 function updateCartDisplay() {
     var cartNumElement = document.querySelector('.cart-num');
-    cartNumElement.textContent = cartQuantity;
+    cartNumElement.textContent = calculateTotalQuantity();
+}
+
+// 计算购物车中所有商品的总数量
+function calculateTotalQuantity() {
+    var cart = JSON.parse(localStorage.getItem('cart')) || { products: [] };
+    var totalQuantity = 0;
+
+    // 计算购物车中所有商品的总数量
+    cart.products.forEach(product => {
+        totalQuantity += product.quantity || 0;
+    });
+
+    return totalQuantity;
 }
 
 // 显示特定商品的信息
-function showProductInfo(index) {
-    // 获取当前商品的信息
-    var currentProduct = products[index];
+function showProductInfo() {
+    // 在这里根据需求确定如何获取产品名称，这里使用示例的方式
+    var urlParams = new URLSearchParams(window.location.search);
+    var productName = urlParams.get('product');
 
-    // Initialize addSuccessElement here
-    addSuccessElement = document.querySelector('.add-success');
+    // 根据产品名称查找索引
+    currentProductIndex = products.findIndex(product => product.name === productName);
 
-    // 初始化一个空的 HTML 字符串
-    var html = '';
+    if (currentProductIndex !== -1) {
+        // 获取当前商品的信息
+        var currentProduct = products[currentProductIndex];
 
-    // 将当前商品的信息添加到 HTML 字符串中
-    html += `
+        // 初始化一个空的 HTML 字符串
+        var html = '';
+
+        // 将当前商品的信息添加到 HTML 字符串中
+        html += `
         <div class="product-block">
             <img class="product-image" src="${currentProduct.Img}" />
             <div class="product-information">
@@ -230,6 +237,9 @@ function showProductInfo(index) {
             <p class="product-description">${currentProduct.discription}</p>
         </div>`;
 
-    // 将 HTML 字符串设置为 .js-product-info 元素的 innerHTML
-    document.querySelector(".js-product-info").innerHTML = html;
+        // 将 HTML 字符串设置为 .js-product-info 元素的 innerHTML
+        document.querySelector(".js-product-info").innerHTML = html;
+    } else {
+        console.error("无法找到匹配的商品信息");
+    }
 }

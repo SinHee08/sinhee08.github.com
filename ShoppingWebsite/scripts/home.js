@@ -26,18 +26,18 @@ document.addEventListener('DOMContentLoaded', function() {
     updateCartNumFromLocalStorage();
 });
 
-function updateCartNumFromLocalStorage() {
-    var cart = JSON.parse(localStorage.getItem('cart')) || { products: [] };
-    var totalQuantity = 0;
+// function updateCartNumFromLocalStorage() {
+//     var cart = JSON.parse(localStorage.getItem('cart')) || { products: [] };
+//     var totalQuantity = 0;
 
-    // 计算购物车中所有商品的总数量
-    cart.products.forEach(product => {
-        totalQuantity += product.quantity || 0;
-    });
+//     // 计算购物车中所有商品的总数量
+//     cart.products.forEach(product => {
+//         totalQuantity += product.quantity || 0;
+//     });
 
-    // 更新 cart-num
-    document.querySelector('.cart-num').textContent = totalQuantity;
-}
+//     // 更新 cart-num
+//     document.querySelector('.cart-num').textContent = totalQuantity;
+// }
 
 function addToCart(event, index) {
     // 阻止默认行为，即阻止跳转到product.html
