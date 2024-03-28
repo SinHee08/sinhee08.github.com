@@ -20,64 +20,27 @@ const products = [
         originPrice: 100,
         discountPrice: 49
     }
-]
+];
 
 document.addEventListener('DOMContentLoaded', function() {
     updateCartNumFromLocalStorage();
 });
 
-// function updateCartNumFromLocalStorage() {
-//     var cart = JSON.parse(localStorage.getItem('cart')) || { products: [] };
-//     var totalQuantity = 0;
-
-//     // 计算购物车中所有商品的总数量
-//     cart.products.forEach(product => {
-//         totalQuantity += product.quantity || 0;
-//     });
-
-//     // 更新 cart-num
-//     document.querySelector('.cart-num').textContent = totalQuantity;
-// }
-
 function addToCart(event, index) {
-    // 阻止默认行为，即阻止跳转到product.html
     event.preventDefault();
 
-    var cartNumElement = document.querySelector('.cart-num'); // 获取 cart-num 元素
-    var currentCartNum = parseInt(cartNumElement.textContent); // 获取当前的购物车数量
-    currentCartNum++; // 将购物车数量递增
-    cartNumElement.textContent = currentCartNum; // 更新 cart-num 元素的文本内容
+    var cartNumElement = document.querySelector('.cart-num');
+    var currentCartNum = parseInt(cartNumElement.textContent);
+    currentCartNum++;
+    cartNumElement.textContent = currentCartNum;
 
-    var clickedProduct = products[index]; // 在这里可以通过索引或其他唯一标识符找到被点击的商品
-    console.log("Clicked Product:", clickedProduct); // 在这里可以执行其他加入购物车的逻辑，比如将商品信息添加到购物车数组中
+    var clickedProduct = products[index];
 
-    // 使用 localStorage 存储购物车信息
-    var cart = JSON.parse(localStorage.getItem('cart')) || { products: [] };
+    console.log("Clicked Product:", clickedProduct);
 
-    // 确保 cart 对象有一个 products 属性
-    if (!cart.hasOwnProperty('products')) {
-        cart.products = [];
-    }
+    // 更新购物车信息
+    updateCart(clickedProduct);
 
-    // 检查购物车中是否已经存在当前点击的商品
-    var existingProduct = cart.products.find(p => p.name === clickedProduct.name);
-
-    if (existingProduct) {
-        // 如果商品已存在，增加其数量
-        existingProduct.quantity++;
-    } else {
-        // 如果商品不存在，将其添加到购物车
-        cart.products.push({
-            name: clickedProduct.name,
-            price: clickedProduct.discountPrice,
-            quantity: 1 // 这里可以根据实际情况设置数量
-        });
-    }
-
-    // 存储更新后的购物车信息到 localStorage
-    localStorage.setItem('cart', JSON.stringify(cart));
-
-    // 查找与点击产品相关的成功元素
     var productBlock = event.target.closest('.product-block');
     var successElement = productBlock.querySelector('.add-success');
 
@@ -92,7 +55,29 @@ function addToCart(event, index) {
     }, 2000);
 }
 
+function updateCart(product) {
+    var cart = JSON.parse(localStorage.getItem('cart')) || { products: [] };
 
+    if (!cart.hasOwnProperty('products')) {
+        cart.products = [];
+    }
+
+    var existingProduct = cart.products.find(p => p.name === product.name);
+
+    if (existingProduct) {
+        existingProduct.quantity++;
+    } else {
+        cart.products.push({
+            name: product.name,
+            price: product.discountPrice,
+            quantity: 1,
+            Img: product.Img,  // 新添加的字段
+            originalPrice: product.originPrice  // 新添加的字段
+        });
+    }
+
+    localStorage.setItem('cart', JSON.stringify(cart));
+}
 
 let html = "";
 
@@ -116,7 +101,6 @@ for (let i = 0; i < products.length; i++) {
                             <p class="origin-price">${products[i].originPrice}</p>
                         </div>
 
-                        <!-- 将商品索引传递给addToCart函数 -->
                         <img class="add-to-cart" src="images/icons/cart.png" onclick="addToCart(event, ${i})">
                     </div>
                 </div>

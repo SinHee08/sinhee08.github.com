@@ -124,7 +124,9 @@ function addToCart() {
         cart.products.push({
             name: clickedProduct.name,
             price: clickedProduct.discountPrice,
-            quantity: selectedQuantity
+            quantity: selectedQuantity,
+            Img: clickedProduct.Img,  // 新添加的字段
+            originalPrice: clickedProduct.originPrice  // 新添加的字段
         });
     }
 
